@@ -7,7 +7,6 @@
 There are a lot of books I actually took from other github repositories. 
 
 I will be listing each repo below:
-  ### MrM8BRH/SuperLibrary
   ### frozenbra1n/CyberSecurity-Store
 
 For now, enjoy this free content that I share with love.
