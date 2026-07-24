@@ -26,3 +26,14 @@ A **Corporate-owned business only (COBO)** device is the company's property and 
 **Corporate-owned personally enabled (COPE)** is when the company chooses and supplies the device, and it remains the company's property.
 **Choose your own device (CYOD)** is like COPE, but the employee can choose the device they want from a list.
 **Rogue Antivirus** is when a website displays a pop-up disguised as a normal Windows dialog box with a fake security alert. The spoofed notification and browser ad is designed to alarm users and promote the installation of Trojan malware.
+
+CompTIA A+ Malware Removal Best Practices:
+    - Identify symptoms
+    - Quarantine the infected system
+    - Disable System Restore
+    - Remeadiate (Update AV, scan, and remove)
+    - Schedule scans and updates
+    - Enable System Restore and create a restore point
+    - Educate the end user 
+
+

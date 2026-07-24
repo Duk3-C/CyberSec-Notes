@@ -40,3 +40,39 @@ JIT (Just-In-Time) access is a security practice in which users are granted acce
 
 Risk analysis is a systematic approach to identify possible risks associated with implementing the change. Each change being requested should undergo a risk analysis.
 
+In a Windows environment, services often run under a specific user account rather than the local system account. If that account's credentials have expired or if the account has been locked due to multiple failed login attempts, the services it was running will stop.
+
+After completing all malware removal steps, a technician's next action should be to educate the end user on how to prevent those types of issues.
+
+Synthetic full backups  create a full backup by combining previous full backups and incremental backups without transferring all data again. This improves the backup time because the system does not have to process every single file from scratch every time the backup is made.
+
+When a technician has exhausted their knowledge and cannot provide any further steps to a customer during troubleshooting, they must escalate the issue to a senior technician that can better handle the issue. That way the customer will know they're in hand of a more experienced professional.
+
+Offboarding requires revoking a user's acces to both physical and digital resources to maintain security.
+
+When dealing with zero-day vulnerabilities, a technician must implement an emergency change immediately, that way the fix will have priority.
+
+Most issues that feature bad performance and slow applications, are mostly due to RAM usage. Either because the machine does not have the required amount of RAM to run those processes, or because the installed RAM is malfunctioning.
+
+Rogue Wireless Networks:
+    1. A rogue wireless access point is an unaithorized device set up to broadcast a wireless network, often using the same SSID as the legitimate network it is copying.
+    2. Users may connect to this rogue network and have internet connection, but they will not have access to the original network's internal resources such as file shares because they are no longer connected to the proper segment.
+    **This security issue concept is better covered in the CompTIA A+ Core 2 wireless security threats chapter**
+
+MFA frequent  issues:
+    MFA (Multifactor authentication) apps, often generate time-based one-time passwords (TOTP). These numeric codes rely on the smartphone's internal clock aligning precisely with the clock in the authentication servers.
+    When someone travels internationally, the smartphone's internal clock may either automatically change itself or retain an incorrect offset because of network settings or manual changes. This discrepancy disrupts the code generation process on the authentication server's side, creating an invalid one-time password wuring login attempts.
+    Before reinstalling an app or escalating these types of issues, a technician should always make sure to check on the device's internal clock and set a proper date and time.
+
+A network-based remote installation tool allows IT teams to:
+    - deploy images to multiple machines simultaneously over the network with minimal effort
+    - handle different hardware classes through hardware-specific driver injection
+    - apply custom images based on user groups through task sequences or deployment rules
+    - maintian consistent configurations, reducing human error 
+
+    Some of these tools are:
+        - Windows Deployment Services 
+        - SCCM (Microsoft System Center Configuration)
+        - MDT (Microsoft Deployment Toolkit)
+
+
