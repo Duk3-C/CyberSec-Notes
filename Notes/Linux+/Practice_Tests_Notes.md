@@ -4,6 +4,9 @@
     system UIDs range from 0 - 999.
 
 AppArmor profiles are stored in /etc/apparmor.d/. Profile files define what resources an application can access. aa-enforce and aa-complain modes are similar to SELinux enforcing and permissive.
+AppArmor is the default MAC (Mandatory Access Control) system on Ubuntu and SUSE. It uses profiles to confine applications. SELinux is default on RHEL/CentOS/Fedora.
+SMACK and TOMOYO are other Linux security modules.
+
 
 ---
 
@@ -22,6 +25,11 @@ Both insmod and modprobe accept module parameters in the form param=value. `modp
 
 *smartctl -a* displays comprehensive SMART information including health status, attributes, and error logs. SMART (Self-monitoring, Analysis, and Reporting Technology) predicts drive failutes. hdparm shos drive parameters but not SMART data.
 
+``dhclient -r`` releases the current lease, and ``dhclient`` requests a new one. 
+On systemd-networkd systems, use networkctl renew INTERFACE. Some distributions use dhcpcd instead of dhclient.
+
+The noatime mount option disables the updating of access times (atime) on files when they are read. This reduces disk I/O and can significantly improve performance, expecially on systems with many file reads. This is commonly used on SSDs and database servers.
+
 ---
 
 **Git Commands**:
@@ -36,7 +44,20 @@ Both insmod and modprobe accept module parameters in the form param=value. `modp
 ``rpm -qi`` shows information on RHEL/CentOS.
     the specific command depends on the distribution and package management system.
 
+``sar`` without options and ``sar -u`` both display CPU utilization. -u explicitly specifies CPU activity. ``sar -P ALL`` shows per-CPU statistics.
+**The sysstat package must be installed and enabled for sar to collect data.**
+
 ---
 
 **Protocols**:
     *NTP* (Network Time Protocol) synchronizes system clocks over a network. The ntpd daemon or systemd-timesyncd service handles NTP pon Linux. Accurate time is critical for logging, authentication (Kerberos), and distributed systems. chrony is a newer alternative to ntpd.
+        
+---
+
+**Docker**:
+    RUN executes commands during the image build, creating new layers.
+    CMD provides defaults for running containers. 
+    ENTRYPOINT configures the container as an executable. 
+    Multiple RUN commands can be combined with && to reduce layers.
+
+---
