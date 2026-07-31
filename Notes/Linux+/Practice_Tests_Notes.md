@@ -7,6 +7,11 @@ AppArmor profiles are stored in /etc/apparmor.d/. Profile files define what reso
 AppArmor is the default MAC (Mandatory Access Control) system on Ubuntu and SUSE. It uses profiles to confine applications. SELinux is default on RHEL/CentOS/Fedora.
 SMACK and TOMOYO are other Linux security modules.
 
+``-r`` tests if a file exists and is readable.
+``-e`` tests for existence only.
+``-f`` tests if it is a regular file.
+``-x`` tests for executability.
+File test operators are essential for shell scripting logic.
 
 ---
 
@@ -29,6 +34,13 @@ Both insmod and modprobe accept module parameters in the form param=value. `modp
 On systemd-networkd systems, use networkctl renew INTERFACE. Some distributions use dhcpcd instead of dhclient.
 
 The noatime mount option disables the updating of access times (atime) on files when they are read. This reduces disk I/O and can significantly improve performance, expecially on systems with many file reads. This is commonly used on SSDs and database servers.
+
+/var/log/dmesg contains kernel ring buffer messages. journalctl -k shows kernel messages from systemd journal. 
+/var/log/boot.log may contain boot service messages but varies by distribution and configuration.
+
+``nft list ruleset`` displays all nftables rules across all tables and chains. 
+nft is the modern replacement for iptables. 
+*nftables* uses a unified syntax for IPv4/IPv6 and has better performance than iptables.
 
 ---
 
