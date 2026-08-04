@@ -73,3 +73,5 @@ nft is the modern replacement for iptables.
     Multiple RUN commands can be combined with && to reduce layers.
 
 ---
+
+``zip -e`` creates encrypted zip archives. ``gpg -c`` (symmetric) encrypts any file with a password. tar itself does not support encryption directly but can piped to gpg. For string encryption, prefer gpg over zip encryption.
