@@ -22,4 +22,7 @@
 - Which command loads a kernel module along with its dependencies?
     **modprobe** is the recommended command for loading kernel modules as it automatically handles module dependencies.
 
+- An employee cannot save a large file to their device due to exceeding storage capacity. What is the cause of the employee not being able to save the file?
+    Low Disk space occurs when the disk's storage has reached its capacity, meaning that the disk itself can hold no additional data.
+
 

@@ -13,6 +13,10 @@ SMACK and TOMOYO are other Linux security modules.
 ``-x`` tests for executability.
 File test operators are essential for shell scripting logic.
 
+If a certificate authority fails to uphold their responsibilities when issuing certificates, they will have an issue where their authority is withdrawn, and their existing certificates are placed in a revocation list.
+
+Webhooks are event-driven and can notify an application or system when a specific event occurs, such as CPU usage exceeding a threshold. This notification can trigger an automated workflow to scale resources, making them ideal for dynamic environments.
+
 ---
 
 ```bash
@@ -42,6 +46,8 @@ The noatime mount option disables the updating of access times (atime) on files 
 nft is the modern replacement for iptables. 
 *nftables* uses a unified syntax for IPv4/IPv6 and has better performance than iptables.
 
+The `/usr/share/zoneinfo/` directory contains the regional time zone files that Linux systems use to configure the system's time zone. These files are organized by region and are not raw text files but special files used by the system.
+
 ---
 
 **Git Commands**:
@@ -55,14 +61,27 @@ nft is the modern replacement for iptables.
 ``apt`` show displays detailed information.
 ``rpm -qi`` shows information on RHEL/CentOS.
     the specific command depends on the distribution and package management system.
+The command ``yum provides zsh`` displays the contents of the zsh package. Zsh is short for Z shell, the default command-line interface (CLI) shell for macOS. 
 
 ``sar`` without options and ``sar -u`` both display CPU utilization. -u explicitly specifies CPU activity. ``sar -P ALL`` shows per-CPU statistics.
 **The sysstat package must be installed and enabled for sar to collect data.**
+
+``cpio -iv < knowledgebase.cpio``. To extract the contents of the knowledgebase.cpio archive, you would use this command. The `iv` option is used to copy files into the filesystem (restore files) from an archive. The < redirector reads the contents of the knowledgebase.cpio archive.
+
+``cpio -ov < knowledgebase.cpio``. The `ov` option is used to create an archive, not extract the files.
+
+``echo $?`` displays the exit code from the previously executed command. In this case, a value of 1 would be displayed because the command failed. A 0 indicates no errors.
+
+``fio`` is designed to simulate I/O workloads and provide detailed metrics like latency, throughput, and IOPS. This enables direct comparison of storage performance under realistic conditions.
 
 ---
 
 **Protocols**:
     *NTP* (Network Time Protocol) synchronizes system clocks over a network. The ntpd daemon or systemd-timesyncd service handles NTP pon Linux. Accurate time is critical for logging, authentication (Kerberos), and distributed systems. chrony is a newer alternative to ntpd.
+
+An Access Control List (ACL) is a list of permissions attached to an object. System administrators can use ACLs when the traditional file permission concept does not suffice and can lead to issues when users are not on the ACL.
+
+Low Input/Output Operations per Second (IOPS) indicate a faulty drive or data bottlenecks when moving/retrieving the data.
         
 ---
 
@@ -75,3 +94,5 @@ nft is the modern replacement for iptables.
 ---
 
 ``zip -e`` creates encrypted zip archives. ``gpg -c`` (symmetric) encrypts any file with a password. tar itself does not support encryption directly but can piped to gpg. For string encryption, prefer gpg over zip encryption.
+
+
