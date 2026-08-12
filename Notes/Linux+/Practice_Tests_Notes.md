@@ -55,6 +55,8 @@ The `/usr/share/zoneinfo/` directory contains the regional time zone files that 
     ``git commit -a`` commits all modified tracked files without explicit staging. 
     ``git push`` uploads commits to a remote repository.
 
+Corrupted or incomplete metadata is a common repository misconfiguration issue and can prevent the system from resolving dependencies or fetching package information, leading to errors during package installation or updates.
+
 ---
 
 ``dpkg -l`` lists installed packages on Debian/Ubuntu. 
@@ -74,6 +76,8 @@ The command ``yum provides zsh`` displays the contents of the zsh package. Zsh i
 
 ``fio`` is designed to simulate I/O workloads and provide detailed metrics like latency, throughput, and IOPS. This enables direct comparison of storage performance under realistic conditions.
 
+The ``dmesg`` command prints any messages sent to the kernel's message buffer during and after system boot.
+
 ---
 
 **Protocols**:
@@ -82,6 +86,8 @@ The command ``yum provides zsh`` displays the contents of the zsh package. Zsh i
 An Access Control List (ACL) is a list of permissions attached to an object. System administrators can use ACLs when the traditional file permission concept does not suffice and can lead to issues when users are not on the ACL.
 
 Low Input/Output Operations per Second (IOPS) indicate a faulty drive or data bottlenecks when moving/retrieving the data.
+
+The systemd management system includes a very robust journaling and logging component that can be useful for understanding system and application crashes. The systemd journal is a different and infependent service from rsyslog, which is the traditional Linxu log file service.
         
 ---
 
