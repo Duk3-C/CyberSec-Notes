@@ -1,0 +1,809 @@
+{
+  "info": {
+    "id": "ses_0071079e8ffeUATmROeR85ZLs7",
+    "slug": "quick-squid",
+    "projectID": "1cbac71b26e47199f2cf189a47467d720cc8cad2",
+    "directory": "/home/orlando/Projects/CyberSec-Notes/Notes/Linux+",
+    "path": "Notes/Linux+",
+    "title": "Exam topic practice question generator",
+    "agent": "build",
+    "model": {
+      "id": "deepseek-v4-flash-free",
+      "providerID": "opencode",
+      "variant": "max"
+    },
+    "version": "1.18.16",
+    "summary": {
+      "additions": 0,
+      "deletions": 0,
+      "files": 0
+    },
+    "cost": 0,
+    "tokens": {
+      "input": 37106,
+      "output": 1092,
+      "reasoning": 380,
+      "cache": {
+        "read": 30208,
+        "write": 0
+      }
+    },
+    "time": {
+      "created": 1786587874839,
+      "updated": 1786588178478
+    }
+  },
+  "messages": [
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1786587874848
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "deepseek-v4-flash-free",
+          "variant": "max"
+        },
+        "summary": {
+          "diffs": []
+        },
+        "id": "msg_ff8ef8620001xhoC54tJDs7rmc",
+        "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "I will use this section for you to test me on any topics of the exam. When I tell you the topic, you will generate questions and ask me one at a time waiting for an input with the answer. ",
+          "id": "prt_ff8ef8621001bFmKs4OpI4KyUP",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8ef8620001xhoC54tJDs7rmc"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_ff8ef8620001xhoC54tJDs7rmc",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "variant": "max",
+        "path": {
+          "cwd": "/home/orlando/Projects/CyberSec-Notes/Notes/Linux+",
+          "root": "/home/orlando/Projects/CyberSec-Notes"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 8496,
+          "input": 5886,
+          "output": 36,
+          "reasoning": 142,
+          "cache": {
+            "write": 0,
+            "read": 2432
+          }
+        },
+        "modelID": "deepseek-v4-flash-free",
+        "providerID": "opencode",
+        "time": {
+          "created": 1786587874856,
+          "completed": 1786587877749
+        },
+        "finish": "stop",
+        "id": "msg_ff8ef86280014YP5AcYhvIWHWL",
+        "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7"
+      },
+      "parts": [
+        {
+          "snapshot": "3764fba139afbb28c8446d11ef2bdb8b4b2d0a2b",
+          "type": "step-start",
+          "id": "prt_ff8ef8906001FkTMlb0Ot19DrH",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8ef86280014YP5AcYhvIWHWL"
+        },
+        {
+          "type": "reasoning",
+          "text": "The user wants me to test them on Linux+ exam topics. They'll tell me a topic, and I generate questions one at a time, waiting for their answer. Let me look at the notes directory to understand what topics might be covered.\n\nLet me check the workspace to see what's there. Actually, the user just said they'll tell me the topic. I should acknowledge and wait for them to give me the topic. Let me check what's in the current directory to be prepared, but mostly I should just respond briefly.\n\nThe user's instruction is clear: when they tell me the topic, I generate questions and ask one at a time. So I should just confirm readiness. Keep it short.",
+          "time": {
+            "start": 1786587876349,
+            "end": 1786587877397
+          },
+          "id": "prt_ff8ef8bfd001JfWtbD5KQ3UYfJ",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8ef86280014YP5AcYhvIWHWL"
+        },
+        {
+          "type": "text",
+          "text": "Ready. Tell me the topic (e.g., package management, storage, networking, security, etc.) and I'll start quizzing you one question at a time.",
+          "time": {
+            "start": 1786587877399,
+            "end": 1786587877717
+          },
+          "id": "prt_ff8ef901700195h1k7XSAZa8hM",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8ef86280014YP5AcYhvIWHWL"
+        },
+        {
+          "reason": "stop",
+          "snapshot": "3764fba139afbb28c8446d11ef2bdb8b4b2d0a2b",
+          "type": "step-finish",
+          "tokens": {
+            "total": 8496,
+            "input": 5886,
+            "output": 36,
+            "reasoning": 142,
+            "cache": {
+              "write": 0,
+              "read": 2432
+            }
+          },
+          "cost": 0,
+          "id": "prt_ff8ef9162001ULYb4BSnIkqMV8",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8ef86280014YP5AcYhvIWHWL"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1786587998590
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "deepseek-v4-flash-free",
+          "variant": "max"
+        },
+        "summary": {
+          "diffs": []
+        },
+        "id": "msg_ff8f1697e001jHllsTG1Bez8Eg",
+        "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "whether the answer is correct or incorrect, I want you to tell me if it is any of them, or partial, as well as giving me a brief explanation on the answer and which objective it covers. Make a total of 10 questions per topic. Make sure to give me multiple options (try to make it as exam-like as possible). Do you understand?",
+          "id": "prt_ff8f1697f001F7RJqJpqXqShrf",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f1697e001jHllsTG1Bez8Eg"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_ff8f1697e001jHllsTG1Bez8Eg",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "variant": "max",
+        "path": {
+          "cwd": "/home/orlando/Projects/CyberSec-Notes/Notes/Linux+",
+          "root": "/home/orlando/Projects/CyberSec-Notes"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 8758,
+          "input": 6819,
+          "output": 147,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 1792
+          }
+        },
+        "modelID": "deepseek-v4-flash-free",
+        "providerID": "opencode",
+        "time": {
+          "created": 1786587998597,
+          "completed": 1786588000372
+        },
+        "finish": "stop",
+        "id": "msg_ff8f16985001bB3V6Sa4V29xBy",
+        "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7"
+      },
+      "parts": [
+        {
+          "snapshot": "3764fba139afbb28c8446d11ef2bdb8b4b2d0a2b",
+          "type": "step-start",
+          "id": "prt_ff8f16bcd001zklnad3lkfYAW5",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f16985001bB3V6Sa4V29xBy"
+        },
+        {
+          "type": "reasoning",
+          "text": "The user is setting up the quiz format rules: 10 questions per topic, multiple choice, exam-like, and after each answer I should tell them if it's correct, incorrect, or partial, plus a brief explanation and which objective it covers. They're asking \"Do you understand?\" — simple confirmation needed.",
+          "time": {
+            "start": 1786587999183,
+            "end": 1786587999326
+          },
+          "id": "prt_ff8f16bcf001KMoCdjbTXrV0nW",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f16985001bB3V6Sa4V29xBy"
+        },
+        {
+          "type": "text",
+          "text": "Understood. Format per topic:\n\n- 10 multiple-choice questions (exam-style, CompTIA XK0-005 style)\n- One at a time; I wait for your answer before moving on\n- After each answer I'll tell you: **Correct / Incorrect / Partial**, with a brief explanation and the **exam objective** it maps to\n\nReady when you are — name the topic.",
+          "time": {
+            "start": 1786587999328,
+            "end": 1786588000356
+          },
+          "id": "prt_ff8f16c60001owQgVjLO96truB",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f16985001bB3V6Sa4V29xBy"
+        },
+        {
+          "reason": "stop",
+          "snapshot": "3764fba139afbb28c8446d11ef2bdb8b4b2d0a2b",
+          "type": "step-finish",
+          "tokens": {
+            "total": 8758,
+            "input": 6819,
+            "output": 147,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 1792
+            }
+          },
+          "cost": 0,
+          "id": "prt_ff8f1706c0013gatA6ImF7CTcE",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f16985001bB3V6Sa4V29xBy"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1786588038790
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "deepseek-v4-flash-free",
+          "variant": "max"
+        },
+        "summary": {
+          "diffs": []
+        },
+        "id": "msg_ff8f20686001zS2NlpBVEnt7h9",
+        "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "Also make some questions with multiple correct answers so I get more than one correct answer to the question itself",
+          "id": "prt_ff8f20686002E204eNaYL2YmQC",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f20686001zS2NlpBVEnt7h9"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_ff8f20686001zS2NlpBVEnt7h9",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "variant": "max",
+        "path": {
+          "cwd": "/home/orlando/Projects/CyberSec-Notes/Notes/Linux+",
+          "root": "/home/orlando/Projects/CyberSec-Notes"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 8820,
+          "input": 295,
+          "output": 48,
+          "reasoning": 29,
+          "cache": {
+            "write": 0,
+            "read": 8448
+          }
+        },
+        "modelID": "deepseek-v4-flash-free",
+        "providerID": "opencode",
+        "time": {
+          "created": 1786588038795,
+          "completed": 1786588040784
+        },
+        "finish": "stop",
+        "id": "msg_ff8f2068b001i8JjhymJEp3fVS",
+        "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7"
+      },
+      "parts": [
+        {
+          "snapshot": "3764fba139afbb28c8446d11ef2bdb8b4b2d0a2b",
+          "type": "step-start",
+          "id": "prt_ff8f20962001eloXfPzrn9IGuZ",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f2068b001i8JjhymJEp3fVS"
+        },
+        {
+          "type": "reasoning",
+          "text": "The user wants some questions with multiple correct answers (like \"Select all that apply\" style on the exam). I should confirm and incorporate that.",
+          "time": {
+            "start": 1786588039816,
+            "end": 1786588040227
+          },
+          "id": "prt_ff8f20a88001X6EFy6yAqae4ar",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f2068b001i8JjhymJEp3fVS"
+        },
+        {
+          "type": "text",
+          "text": "Got it. I'll mix in several \"select all that apply\" questions (with 3-5 options, 2-3 correct) alongside single-answer ones, and grade your selection accordingly. Name the topic to begin.",
+          "time": {
+            "start": 1786588040228,
+            "end": 1786588040767
+          },
+          "id": "prt_ff8f20c240019pB1M0ML2EmfsH",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f2068b001i8JjhymJEp3fVS"
+        },
+        {
+          "reason": "stop",
+          "snapshot": "3764fba139afbb28c8446d11ef2bdb8b4b2d0a2b",
+          "type": "step-finish",
+          "tokens": {
+            "total": 8820,
+            "input": 295,
+            "output": 48,
+            "reasoning": 29,
+            "cache": {
+              "write": 0,
+              "read": 8448
+            }
+          },
+          "cost": 0,
+          "id": "prt_ff8f20e47001avSPe0cHS6582V",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f2068b001i8JjhymJEp3fVS"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1786588102227
+        },
+        "agent": "plan",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "deepseek-v4-flash-free",
+          "variant": "max"
+        },
+        "summary": {
+          "diffs": []
+        },
+        "id": "msg_ff8f2fe53001ZJ0ESTgULEKlHW",
+        "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "Is there a way I can export these prompts and session into a file in the current directory as a way of keeping track of conversations?",
+          "id": "prt_ff8f2fe55001Hy07seFMS3UQLu",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f2fe53001ZJ0ESTgULEKlHW"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_ff8f2fe53001ZJ0ESTgULEKlHW",
+        "role": "assistant",
+        "mode": "plan",
+        "agent": "plan",
+        "variant": "max",
+        "path": {
+          "cwd": "/home/orlando/Projects/CyberSec-Notes/Notes/Linux+",
+          "root": "/home/orlando/Projects/CyberSec-Notes"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 9487,
+          "input": 3024,
+          "output": 319,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 6144
+          }
+        },
+        "modelID": "deepseek-v4-flash-free",
+        "providerID": "opencode",
+        "time": {
+          "created": 1786588102235,
+          "completed": 1786588106725
+        },
+        "finish": "tool-calls",
+        "id": "msg_ff8f2fe5b002wyuF7eYGNSpNqb",
+        "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7"
+      },
+      "parts": [
+        {
+          "snapshot": "3764fba139afbb28c8446d11ef2bdb8b4b2d0a2b",
+          "type": "step-start",
+          "id": "prt_ff8f30941001RsV64RjLpTS8Kb",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f2fe5b002wyuF7eYGNSpNqb"
+        },
+        {
+          "type": "reasoning",
+          "text": "The user asks if there's a way to export the prompts and session into a file in the current directory to track conversations. I'm in plan mode, so I should only research and plan, not execute.\n\nLet me think about opencode-specific features for exporting sessions. opencode has a CLI with commands. Let me check if opencode has an export feature. There's `opencode` CLI... I recall opencode has sessions stored in ~/.local/share/opencode or similar. There might be no direct export command. I could check the docs.\n\nSince the user is asking about opencode capabilities (\"Is there a way...\"), per instructions I should use WebFetch to check opencode docs. Let me check https://opencode.ai/docs for session/export info.\n\nLet me fetch the docs to see if there's an export feature, and also check locally what's available (opencode --help could be read-only).\n\nI can run read-only commands like `opencode --help`. Let me do that in parallel with a webfetch.",
+          "time": {
+            "start": 1786588105027,
+            "end": 1786588106153
+          },
+          "id": "prt_ff8f30943001lWNrtwCT3lD04r",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f2fe5b002wyuF7eYGNSpNqb"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "call_83f1247d72a24ec6b147cb4a",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "opencode --help 2>&1"
+            },
+            "output": "⠀                                ▄     \n█▀▀█ █▀▀█ █▀▀█ █▀▀▄ █▀▀▀ █▀▀█ █▀▀█ █▀▀█\n█  █ █  █ █▀▀▀ █  █ █    █  █ █  █ █▀▀▀\n▀▀▀▀ █▀▀▀ ▀▀▀▀ ▀  ▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀\n\nCommands:\n  opencode completion          generate shell completion script\n  opencode acp                 start ACP (Agent Client Protocol) server\n  opencode mcp                 manage MCP (Model Context Protocol) servers\n  opencode [project]           start opencode tui                                          [default]\n  opencode attach <url>        attach to a running opencode server\n  opencode run [message..]     run opencode with a message\n  opencode debug               debugging and troubleshooting tools\n  opencode providers           manage AI providers and credentials                   [aliases: auth]\n  opencode agent               manage agents\n  opencode upgrade [target]    upgrade opencode to the latest or a specific version\n  opencode uninstall           uninstall opencode and remove all related files\n  opencode serve               starts a headless opencode server\n  opencode web                 start opencode server and open web interface\n  opencode models [provider]   list all available models\n  opencode stats               show token usage and cost statistics\n  opencode export [sessionID]  export session data as JSON\n  opencode import <file>       import session data from JSON file or URL\n  opencode github              manage GitHub agent\n  opencode pr <number>         fetch and checkout a GitHub PR branch, then run opencode\n  opencode session             manage sessions\n  opencode plugin <module>     install plugin and update config                      [aliases: plug]\n  opencode db                  database tools\n\nPositionals:\n  project  path to start opencode in                                                        [string]\n\nOptions:\n  -h, --help          show help                                                            [boolean]\n  -v, --version       show version number                                                  [boolean]\n      --print-logs    print logs to stderr                                                 [boolean]\n      --log-level     log level                 [string] [choices: \"DEBUG\", \"INFO\", \"WARN\", \"ERROR\"]\n      --pure          run without external plugins                                         [boolean]\n      --port          port to listen on                                        [number] [default: 0]\n      --hostname      hostname to listen on                          [string] [default: \"127.0.0.1\"]\n      --mdns          enable mDNS service discovery (defaults hostname to 0.0.0.0)\n                                                                          [boolean] [default: false]\n      --mdns-domain   custom domain name for mDNS service (default: opencode.local)\n                                                                [string] [default: \"opencode.local\"]\n      --cors          additional domains to allow for CORS                     [array] [default: []]\n  -m, --model         model to use in the format of provider/model                          [string]\n  -c, --continue      continue the last session                                            [boolean]\n  -s, --session       session id to continue                                                [string]\n      --fork          fork the session when continuing (use with --continue or --session)  [boolean]\n      --prompt        prompt to use                                                         [string]\n      --agent         agent to use                                                          [string]\n      --auto          auto-approve permissions that are not explicitly denied (dangerous!)\n                                                                          [boolean] [default: false]\n      --mini          start the minimal interactive interface             [boolean] [default: false]\n      --no-replay     disable mini session history replay on resume and after resize       [boolean]\n      --replay-limit  cap visible mini replay to the newest N messages                      [number]\n",
+            "metadata": {
+              "output": "⠀                                ▄     \n█▀▀█ █▀▀█ █▀▀█ █▀▀▄ █▀▀▀ █▀▀█ █▀▀█ █▀▀█\n█  █ █  █ █▀▀▀ █  █ █    █  █ █  █ █▀▀▀\n▀▀▀▀ █▀▀▀ ▀▀▀▀ ▀  ▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀ ▀▀▀▀\n\nCommands:\n  opencode completion          generate shell completion script\n  opencode acp                 start ACP (Agent Client Protocol) server\n  opencode mcp                 manage MCP (Model Context Protocol) servers\n  opencode [project]           start opencode tui                                          [default]\n  opencode attach <url>        attach to a running opencode server\n  opencode run [message..]     run opencode with a message\n  opencode debug               debugging and troubleshooting tools\n  opencode providers           manage AI providers and credentials                   [aliases: auth]\n  opencode agent               manage agents\n  opencode upgrade [target]    upgrade opencode to the latest or a specific version\n  opencode uninstall           uninstall opencode and remove all related files\n  opencode serve               starts a headless opencode server\n  opencode web                 start opencode server and open web interface\n  opencode models [provider]   list all available models\n  opencode stats               show token usage and cost statistics\n  opencode export [sessionID]  export session data as JSON\n  opencode import <file>       import session data from JSON file or URL\n  opencode github              manage GitHub agent\n  opencode pr <number>         fetch and checkout a GitHub PR branch, then run opencode\n  opencode session             manage sessions\n  opencode plugin <module>     install plugin and update config                      [aliases: plug]\n  opencode db                  database tools\n\nPositionals:\n  project  path to start opencode in                                                        [string]\n\nOptions:\n  -h, --help          show help                                                            [boolean]\n  -v, --version       show version number                                                  [boolean]\n      --print-logs    print logs to stderr                                                 [boolean]\n      --log-level     log level                 [string] [choices: \"DEBUG\", \"INFO\", \"WARN\", \"ERROR\"]\n      --pure          run without external plugins                                         [boolean]\n      --port          port to listen on                                        [number] [default: 0]\n      --hostname      hostname to listen on                          [string] [default: \"127.0.0.1\"]\n      --mdns          enable mDNS service discovery (defaults hostname to 0.0.0.0)\n                                                                          [boolean] [default: false]\n      --mdns-domain   custom domain name for mDNS service (default: opencode.local)\n                                                                [string] [default: \"opencode.local\"]\n      --cors          additional domains to allow for CORS                     [array] [default: []]\n  -m, --model         model to use in the format of provider/model                          [string]\n  -c, --continue      continue the last session                                            [boolean]\n  -s, --session       session id to continue                                                [string]\n      --fork          fork the session when continuing (use with --continue or --session)  [boolean]\n      --prompt        prompt to use                                                         [string]\n      --agent         agent to use                                                          [string]\n      --auto          auto-approve permissions that are not explicitly denied (dangerous!)\n                                                                          [boolean] [default: false]\n      --mini          start the minimal interactive interface             [boolean] [default: false]\n      --no-replay     disable mini session history replay on resume and after resize       [boolean]\n      --replay-limit  cap visible mini replay to the newest N messages                      [number]\n",
+              "exit": 0,
+              "truncated": false
+            },
+            "title": "opencode --help 2>&1",
+            "time": {
+              "start": 1786588106692,
+              "end": 1786588106703
+            }
+          },
+          "id": "prt_ff8f30daf001tiHJTlXM36s2L0",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f2fe5b002wyuF7eYGNSpNqb"
+        },
+        {
+          "type": "tool",
+          "tool": "webfetch",
+          "callID": "call_24b26b43858548c680969c3e",
+          "state": {
+            "status": "completed",
+            "input": {
+              "url": "https://opencode.ai/docs/cli",
+              "format": "markdown"
+            },
+            "output": "CLI | OpenCode     [Skip to content](#_top)\n\n  [![](/docs/_astro/logo-dark.DOStV66V.svg) ![](/docs/_astro/logo-light.B0yzR0O5.svg) OpenCode](/docs/)\n\n[app.header.home](/)[app.header.docs](/docs/)\n\n[](https://github.com/anomalyco/opencode)[](https://opencode.ai/discord)\n\nSearch CtrlK\n\nCancel\n\n-   [Intro](/docs/)\n-   [Config](/docs/config/)\n-   [Providers](/docs/providers/)\n-   [Network](/docs/network/)\n-   [Enterprise](/docs/enterprise/)\n-   [Troubleshooting](/docs/troubleshooting/)\n-   [Windows](/docs/windows-wsl)\n-   Usage\n    \n    -   [Go](/docs/go/)\n    -   [TUI](/docs/tui/)\n    -   [CLI](/docs/cli/)\n    -   [Web](/docs/web/)\n    -   [IDE](/docs/ide/)\n    -   [Zen](/docs/zen/)\n    -   [Share](/docs/share/)\n    -   [GitHub](/docs/github/)\n    -   [GitLab](/docs/gitlab/)\n    \n-   Configure\n    \n    -   [Tools](/docs/tools/)\n    -   [Rules](/docs/rules/)\n    -   [Agents](/docs/agents/)\n    -   [Models](/docs/models/)\n    -   [Themes](/docs/themes/)\n    -   [Keybinds](/docs/keybinds/)\n    -   [Commands](/docs/commands/)\n    -   [Formatters](/docs/formatters/)\n    -   [Permissions](/docs/permissions/)\n    -   [Policies](/docs/policies/)\n    -   [LSP Servers](/docs/lsp/)\n    -   [MCP servers](/docs/mcp-servers/)\n    -   [ACP Support](/docs/acp/)\n    -   [Agent Skills](/docs/skills/)\n    -   [References](/docs/references/)\n    -   [Custom Tools](/docs/custom-tools/)\n    \n-   Develop\n    \n    -   [SDK](/docs/sdk/)\n    -   [Server](/docs/server/)\n    -   [Plugins](/docs/plugins/)\n    -   [Ecosystem](/docs/ecosystem/)\n    \n\n[GitHub](https://github.com/anomalyco/opencode)[Discord](https://opencode.ai/discord)\n\nSelect theme DarkLightAuto   Select language EnglishالعربيةBosanskiDanskDeutschEspañolFrançaisItaliano日本語한국어Norsk BokmålPolskiPortuguês (Brasil)РусскийไทยTürkçe简体中文繁體中文\n\nOn this page\n\n-   [Overview](#_top)\n    -   [tui](#tui)\n-   [Commands](#commands)\n    -   [agent](#agent)\n    -   [attach](#attach)\n    -   [auth](#auth)\n    -   [github](#github)\n    -   [mcp](#mcp)\n    -   [models](#models)\n    -   [run](#run-1)\n    -   [serve](#serve)\n    -   [session](#session)\n    -   [stats](#stats)\n    -   [export](#export)\n    -   [import](#import)\n    -   [web](#web)\n    -   [acp](#acp)\n    -   [plugin](#plugin)\n    -   [pr](#pr)\n    -   [db](#db)\n    -   [debug](#debug-1)\n    -   [uninstall](#uninstall)\n    -   [upgrade](#upgrade)\n-   [Global Flags](#global-flags)\n-   [Environment variables](#environment-variables)\n    -   [Experimental](#experimental)\n\n## On this page\n\n-   [Overview](#_top)\n    -   [tui](#tui)\n-   [Commands](#commands)\n    -   [agent](#agent)\n    -   [attach](#attach)\n    -   [auth](#auth)\n    -   [github](#github)\n    -   [mcp](#mcp)\n    -   [models](#models)\n    -   [run](#run-1)\n    -   [serve](#serve)\n    -   [session](#session)\n    -   [stats](#stats)\n    -   [export](#export)\n    -   [import](#import)\n    -   [web](#web)\n    -   [acp](#acp)\n    -   [plugin](#plugin)\n    -   [pr](#pr)\n    -   [db](#db)\n    -   [debug](#debug-1)\n    -   [uninstall](#uninstall)\n    -   [upgrade](#upgrade)\n-   [Global Flags](#global-flags)\n-   [Environment variables](#environment-variables)\n    -   [Experimental](#experimental)\n\n# CLI\n\nOpenCode CLI options and commands.\n\nThe OpenCode CLI by default starts the [TUI](/docs/tui) when run without any arguments.\n\nTerminal window\n\n```\nopencode\n```\n\nBut it also accepts commands as documented on this page. This allows you to interact with OpenCode programmatically.\n\nTerminal window\n\n```\nopencode run \"Explain how closures work in JavaScript\"\n```\n\n---\n\n### [tui](#tui)\n\nStart the OpenCode terminal user interface.\n\nTerminal window\n\n```\nopencode [project]\n```\n\n#### [Flags](#flags)\n\nFlag\n\nShort\n\nDescription\n\n`--continue`\n\n`-c`\n\nContinue the last session\n\n`--session`\n\n`-s`\n\nSession ID to continue\n\n`--fork`\n\nFork the session when continuing (use with `--continue` or `--session`)\n\n`--prompt`\n\nPrompt to use\n\n`--model`\n\n`-m`\n\nModel to use in the form of provider/model\n\n`--agent`\n\nAgent to use\n\n`--auto`\n\nAuto-approve permissions that are not explicitly denied\n\n`--port`\n\nPort to listen on\n\n`--hostname`\n\nHostname to listen on\n\n`--mdns`\n\nEnable mDNS discovery\n\n`--mdns-domain`\n\nCustom mDNS domain name\n\n`--cors`\n\nAdditional browser origin(s) to allow CORS\n\n---\n\n## [Commands](#commands)\n\nThe OpenCode CLI also has the following commands.\n\n---\n\n### [agent](#agent)\n\nManage agents for OpenCode.\n\nTerminal window\n\n```\nopencode agent [command]\n```\n\n---\n\n#### [create](#create)\n\nCreate a new agent with custom configuration.\n\nTerminal window\n\n```\nopencode agent create\n```\n\nThis command will guide you through creating a new agent with a custom system prompt and permission configuration. Anything you don’t allow is denied in the generated agent’s frontmatter.\n\n#### [Flags](#flags-1)\n\nFlag\n\nShort\n\nDescription\n\n`--path`\n\nDirectory to write the agent file to (defaults to global or `.opencode/agent` based on the prompt)\n\n`--description`\n\nWhat the agent should do\n\n`--mode`\n\nAgent mode: `all`, `primary`, or `subagent`\n\n`--permissions`\n\nComma-separated list of permissions to allow (default: all). Available: `bash`, `read`, `edit`, `glob`, `grep`, `webfetch`, `task`, `todowrite`, `websearch`, `lsp`, `skill`. Anything omitted is denied. Alias: `--tools`\n\n`--model`\n\n`-m`\n\nModel to use, in `provider/model` format\n\nPassing all of `--path`, `--description`, `--mode`, and `--permissions` runs the command non-interactively.\n\n---\n\n#### [list](#list)\n\nList all available agents.\n\nTerminal window\n\n```\nopencode agent list\n```\n\n---\n\n### [attach](#attach)\n\nAttach a terminal to an already running OpenCode backend server started via `serve` or `web` commands.\n\nTerminal window\n\n```\nopencode attach [url]\n```\n\nThis allows using the TUI with a remote OpenCode backend. For example:\n\nTerminal window\n\n```\n# Start the backend server for web/mobile accessopencode web --port 4096 --hostname 0.0.0.0\n# In another terminal, attach the TUI to the running backendopencode attach http://10.20.30.40:4096\n```\n\n#### [Flags](#flags-2)\n\nFlag\n\nShort\n\nDescription\n\n`--dir`\n\nWorking directory to start TUI in\n\n`--continue`\n\n`-c`\n\nContinue the last session\n\n`--session`\n\n`-s`\n\nSession ID to continue\n\n`--fork`\n\nFork the session when continuing (use with `--continue` or `--session`)\n\n`--password`\n\n`-p`\n\nBasic auth password (defaults to `OPENCODE_SERVER_PASSWORD`)\n\n`--username`\n\n`-u`\n\nBasic auth username (defaults to `OPENCODE_SERVER_USERNAME` or `opencode`)\n\n---\n\n### [auth](#auth)\n\nCommand to manage credentials and login for providers.\n\nTerminal window\n\n```\nopencode auth [command]\n```\n\n---\n\n#### [login](#login)\n\nOpenCode is powered by the provider list at [Models.dev](https://models.dev), so you can use `opencode auth login` to configure API keys for any provider you’d like to use. This is stored in `~/.local/share/opencode/auth.json`.\n\nTerminal window\n\n```\nopencode auth login\n```\n\nWhen OpenCode starts up it loads the providers from the credentials file. And if there are any keys defined in your environments or a `.env` file in your project.\n\n##### [Flags](#flags-3)\n\nFlag\n\nShort\n\nDescription\n\n`--provider`\n\n`-p`\n\nProvider ID or name to log in to\n\n`--method`\n\n`-m`\n\nLogin method label to use, skipping method selection\n\n---\n\n#### [list](#list-1)\n\nLists all the authenticated providers as stored in the credentials file.\n\nTerminal window\n\n```\nopencode auth list\n```\n\nOr the short version.\n\nTerminal window\n\n```\nopencode auth ls\n```\n\n---\n\n#### [logout](#logout)\n\nLogs you out of a provider by clearing it from the credentials file.\n\nTerminal window\n\n```\nopencode auth logout\n```\n\n---\n\n### [github](#github)\n\nManage the GitHub agent for repository automation.\n\nTerminal window\n\n```\nopencode github [command]\n```\n\n---\n\n#### [install](#install)\n\nInstall the GitHub agent in your repository.\n\nTerminal window\n\n```\nopencode github install\n```\n\nThis sets up the necessary GitHub Actions workflow and guides you through the configuration process. [Learn more](/docs/github).\n\n---\n\n#### [run](#run)\n\nRun the GitHub agent. This is typically used in GitHub Actions.\n\nTerminal window\n\n```\nopencode github run\n```\n\n##### [Flags](#flags-4)\n\nFlag\n\nDescription\n\n`--event`\n\nGitHub mock event to run the agent for\n\n`--token`\n\nGitHub personal access token\n\n---\n\n### [mcp](#mcp)\n\nManage Model Context Protocol servers.\n\nTerminal window\n\n```\nopencode mcp [command]\n```\n\n---\n\n#### [add](#add)\n\nAdd an MCP server to your configuration.\n\nTerminal window\n\n```\nopencode mcp add\n```\n\nThis command will guide you through adding either a local or remote MCP server.\n\n---\n\n#### [list](#list-2)\n\nList all configured MCP servers and their connection status.\n\nTerminal window\n\n```\nopencode mcp list\n```\n\nOr use the short version.\n\nTerminal window\n\n```\nopencode mcp ls\n```\n\n---\n\n#### [auth](#auth-1)\n\nAuthenticate with an OAuth-enabled MCP server.\n\nTerminal window\n\n```\nopencode mcp auth [name]\n```\n\nIf you don’t provide a server name, you’ll be prompted to select from available OAuth-capable servers.\n\nYou can also list OAuth-capable servers and their authentication status.\n\nTerminal window\n\n```\nopencode mcp auth list\n```\n\nOr use the short version.\n\nTerminal window\n\n```\nopencode mcp auth ls\n```\n\n---\n\n#### [logout](#logout-1)\n\nRemove OAuth credentials for an MCP server.\n\nTerminal window\n\n```\nopencode mcp logout [name]\n```\n\n---\n\n#### [debug](#debug)\n\nDebug OAuth connection issues for an MCP server.\n\nTerminal window\n\n```\nopencode mcp debug <name>\n```\n\n---\n\n### [models](#models)\n\nList all available models from configured providers.\n\nTerminal window\n\n```\nopencode models [provider]\n```\n\nThis command displays all models available across your configured providers in the format `provider/model`.\n\nThis is useful for figuring out the exact model name to use in [your config](/docs/config/).\n\nYou can optionally pass a provider ID to filter models by that provider.\n\nTerminal window\n\n```\nopencode models anthropic\n```\n\n#### [Flags](#flags-5)\n\nFlag\n\nDescription\n\n`--refresh`\n\nRefresh the models cache from models.dev\n\n`--verbose`\n\nUse more verbose model output (includes metadata like costs)\n\nUse the `--refresh` flag to update the cached model list. This is useful when new models have been added to a provider and you want to see them in OpenCode.\n\nTerminal window\n\n```\nopencode models --refresh\n```\n\n---\n\n### [run](#run-1)\n\nRun opencode in non-interactive mode by passing a prompt directly.\n\nTerminal window\n\n```\nopencode run [message..]\n```\n\nThis is useful for scripting, automation, or when you want a quick answer without launching the full TUI. For example.\n\nTerminal window\n\n```\nopencode run Explain the use of context in Go\n```\n\nYou can also attach to a running `opencode serve` instance to avoid MCP server cold boot times on every run:\n\nTerminal window\n\n```\n# Start a headless server in one terminalopencode serve\n# In another terminal, run commands that attach to itopencode run --attach http://localhost:4096 \"Explain async/await in JavaScript\"\n```\n\n#### [Flags](#flags-6)\n\nFlag\n\nShort\n\nDescription\n\n`--command`\n\nThe command to run, use message for args\n\n`--continue`\n\n`-c`\n\nContinue the last session\n\n`--session`\n\n`-s`\n\nSession ID to continue\n\n`--fork`\n\nFork the session when continuing (use with `--continue` or `--session`)\n\n`--share`\n\nShare the session\n\n`--model`\n\n`-m`\n\nModel to use in the form of provider/model\n\n`--agent`\n\nAgent to use\n\n`--file`\n\n`-f`\n\nFile(s) to attach to message\n\n`--format`\n\nFormat: default (formatted) or json (raw JSON events)\n\n`--title`\n\nTitle for the session (uses truncated prompt if no value provided)\n\n`--attach`\n\nAttach to a running opencode server (e.g., [http://localhost:4096](http://localhost:4096))\n\n`--password`\n\n`-p`\n\nBasic auth password (defaults to `OPENCODE_SERVER_PASSWORD`)\n\n`--username`\n\n`-u`\n\nBasic auth username (defaults to `OPENCODE_SERVER_USERNAME` or `opencode`)\n\n`--dir`\n\nDirectory to run in, or path on the remote server when attaching\n\n`--port`\n\nPort for the local server (defaults to random port)\n\n`--variant`\n\nModel variant (provider-specific reasoning effort)\n\n`--thinking`\n\nShow thinking blocks\n\n`--auto`\n\nAuto-approve permissions that are not explicitly denied\n\n---\n\n### [serve](#serve)\n\nStart a headless OpenCode server for API access. Check out the [server docs](/docs/server) for the full HTTP interface.\n\nTerminal window\n\n```\nopencode serve\n```\n\nThis starts an HTTP server that provides API access to opencode functionality without the TUI interface. Set `OPENCODE_SERVER_PASSWORD` to enable HTTP basic auth (username defaults to `opencode`).\n\n#### [Flags](#flags-7)\n\nFlag\n\nDescription\n\n`--port`\n\nPort to listen on\n\n`--hostname`\n\nHostname to listen on\n\n`--mdns`\n\nEnable mDNS discovery\n\n`--mdns-domain`\n\nCustom mDNS domain name\n\n`--cors`\n\nAdditional browser origin(s) to allow CORS\n\n---\n\n### [session](#session)\n\nManage OpenCode sessions.\n\nTerminal window\n\n```\nopencode session [command]\n```\n\n---\n\n#### [list](#list-3)\n\nList all OpenCode sessions.\n\nTerminal window\n\n```\nopencode session list\n```\n\n##### [Flags](#flags-8)\n\nFlag\n\nShort\n\nDescription\n\n`--max-count`\n\n`-n`\n\nLimit to N most recent sessions\n\n`--format`\n\nOutput format: table or json (table)\n\n---\n\n#### [delete](#delete)\n\nDelete an OpenCode session.\n\nTerminal window\n\n```\nopencode session delete <sessionID>\n```\n\n---\n\n### [stats](#stats)\n\nShow token usage and cost statistics for your OpenCode sessions.\n\nTerminal window\n\n```\nopencode stats\n```\n\n#### [Flags](#flags-9)\n\nFlag\n\nDescription\n\n`--days`\n\nShow stats for the last N days (all time)\n\n`--tools`\n\nNumber of tools to show (all)\n\n`--models`\n\nShow model usage breakdown (hidden by default). Pass a number to show top N\n\n`--project`\n\nFilter by project (all projects, empty string: current project)\n\n---\n\n### [export](#export)\n\nExport session data as JSON.\n\nTerminal window\n\n```\nopencode export [sessionID]\n```\n\nIf you don’t provide a session ID, you’ll be prompted to select from available sessions.\n\n#### [Flags](#flags-10)\n\nFlag\n\nDescription\n\n`--sanitize`\n\nRedact sensitive transcript/file data\n\n---\n\n### [import](#import)\n\nImport session data from a JSON file or OpenCode share URL.\n\nTerminal window\n\n```\nopencode import <file>\n```\n\nYou can import from a local file or an OpenCode share URL.\n\nTerminal window\n\n```\nopencode import session.jsonopencode import https://opncd.ai/s/abc123\n```\n\n---\n\n### [web](#web)\n\nStart a headless OpenCode server with a web interface.\n\nTerminal window\n\n```\nopencode web\n```\n\nThis starts an HTTP server and opens a web browser to access OpenCode through a web interface. Set `OPENCODE_SERVER_PASSWORD` to enable HTTP basic auth (username defaults to `opencode`).\n\n#### [Flags](#flags-11)\n\nFlag\n\nDescription\n\n`--port`\n\nPort to listen on\n\n`--hostname`\n\nHostname to listen on\n\n`--mdns`\n\nEnable mDNS discovery\n\n`--mdns-domain`\n\nCustom mDNS domain name\n\n`--cors`\n\nAdditional browser origin(s) to allow CORS\n\n---\n\n### [acp](#acp)\n\nStart an ACP (Agent Client Protocol) server.\n\nTerminal window\n\n```\nopencode acp\n```\n\nThis command starts an ACP server that communicates via stdin/stdout using nd-JSON.\n\n#### [Flags](#flags-12)\n\nFlag\n\nDescription\n\n`--cwd`\n\nWorking directory\n\n`--port`\n\nPort to listen on\n\n`--hostname`\n\nHostname to listen on\n\n`--mdns`\n\nEnable mDNS discovery\n\n`--mdns-domain`\n\nCustom mDNS domain name\n\n`--cors`\n\nAdditional browser origin(s) to allow CORS\n\n---\n\n### [plugin](#plugin)\n\nInstall a plugin and update your config.\n\nTerminal window\n\n```\nopencode plugin <module>\n```\n\nOr use the alias.\n\nTerminal window\n\n```\nopencode plug <module>\n```\n\n#### [Flags](#flags-13)\n\nFlag\n\nShort\n\nDescription\n\n`--global`\n\n`-g`\n\nInstall in global config\n\n`--force`\n\n`-f`\n\nReplace existing plugin version\n\n---\n\n### [pr](#pr)\n\nFetch and checkout a GitHub PR branch, then run OpenCode.\n\nTerminal window\n\n```\nopencode pr <number>\n```\n\n---\n\n### [db](#db)\n\nDatabase tools.\n\nTerminal window\n\n```\nopencode db [query]\n```\n\n#### [Flags](#flags-14)\n\nFlag\n\nDescription\n\n`--format`\n\nOutput format: `json` or `tsv`\n\n---\n\n#### [path](#path)\n\nPrint the database path.\n\nTerminal window\n\n```\nopencode db path\n```\n\n---\n\n### [debug](#debug-1)\n\nDebugging and troubleshooting tools.\n\nTerminal window\n\n```\nopencode debug [command]\n```\n\n---\n\n### [uninstall](#uninstall)\n\nUninstall OpenCode and remove all related files.\n\nTerminal window\n\n```\nopencode uninstall\n```\n\n#### [Flags](#flags-15)\n\nFlag\n\nShort\n\nDescription\n\n`--keep-config`\n\n`-c`\n\nKeep configuration files\n\n`--keep-data`\n\n`-d`\n\nKeep session data and snapshots\n\n`--dry-run`\n\nShow what would be removed without removing\n\n`--force`\n\n`-f`\n\nSkip confirmation prompts\n\n---\n\n### [upgrade](#upgrade)\n\nUpdates opencode to the latest version or a specific version.\n\nTerminal window\n\n```\nopencode upgrade [target]\n```\n\nTo upgrade to the latest version.\n\nTerminal window\n\n```\nopencode upgrade\n```\n\nTo upgrade to a specific version.\n\nTerminal window\n\n```\nopencode upgrade v0.1.48\n```\n\n#### [Flags](#flags-16)\n\nFlag\n\nShort\n\nDescription\n\n`--method`\n\n`-m`\n\nThe installation method that was used; curl, npm, pnpm, bun, brew\n\n---\n\n## [Global Flags](#global-flags)\n\nThe opencode CLI takes the following global flags.\n\nFlag\n\nShort\n\nDescription\n\n`--help`\n\n`-h`\n\nDisplay help\n\n`--version`\n\n`-v`\n\nPrint version number\n\n`--print-logs`\n\nPrint logs to stderr\n\n`--log-level`\n\nLog level (DEBUG, INFO, WARN, ERROR)\n\n`--pure`\n\nRun without external plugins\n\n---\n\n## [Environment variables](#environment-variables)\n\nOpenCode can be configured using environment variables.\n\nVariable\n\nType\n\nDescription\n\n`OPENCODE_AUTO_SHARE`\n\nboolean\n\nAutomatically share sessions\n\n`OPENCODE_GIT_BASH_PATH`\n\nstring\n\nPath to Git Bash executable on Windows\n\n`OPENCODE_CONFIG`\n\nstring\n\nPath to config file\n\n`OPENCODE_TUI_CONFIG`\n\nstring\n\nPath to TUI config file\n\n`OPENCODE_CONFIG_DIR`\n\nstring\n\nPath to config directory\n\n`OPENCODE_CONFIG_CONTENT`\n\nstring\n\nInline json config content\n\n`OPENCODE_DISABLE_AUTOUPDATE`\n\nboolean\n\nDisable automatic update checks\n\n`OPENCODE_DISABLE_PRUNE`\n\nboolean\n\nDisable pruning of old data\n\n`OPENCODE_DISABLE_TERMINAL_TITLE`\n\nboolean\n\nDisable automatic terminal title updates\n\n`OPENCODE_PERMISSION`\n\nstring\n\nInlined json permissions config\n\n`OPENCODE_DISABLE_DEFAULT_PLUGINS`\n\nboolean\n\nDisable default plugins\n\n`OPENCODE_DISABLE_LSP_DOWNLOAD`\n\nboolean\n\nDisable automatic LSP server downloads\n\n`OPENCODE_ENABLE_EXPERIMENTAL_MODELS`\n\nboolean\n\nEnable experimental models\n\n`OPENCODE_DISABLE_AUTOCOMPACT`\n\nboolean\n\nDisable automatic context compaction\n\n`OPENCODE_DISABLE_CLAUDE_CODE`\n\nboolean\n\nDisable reading from `.claude` (prompt + skills)\n\n`OPENCODE_DISABLE_CLAUDE_CODE_PROMPT`\n\nboolean\n\nDisable reading `~/.claude/CLAUDE.md`\n\n`OPENCODE_DISABLE_CLAUDE_CODE_SKILLS`\n\nboolean\n\nDisable loading `.claude/skills`\n\n`OPENCODE_DISABLE_MODELS_FETCH`\n\nboolean\n\nDisable fetching models from remote sources\n\n`OPENCODE_DISABLE_MOUSE`\n\nboolean\n\nDisable mouse capture in the TUI\n\n`OPENCODE_FAKE_VCS`\n\nstring\n\nFake VCS provider for testing purposes\n\n`OPENCODE_CLIENT`\n\nstring\n\nClient identifier (defaults to `cli`)\n\n`OPENCODE_ENABLE_EXA`\n\nboolean\n\nEnable Exa web search tools\n\n`OPENCODE_SERVER_PASSWORD`\n\nstring\n\nEnable basic auth for `serve`/`web`\n\n`OPENCODE_SERVER_USERNAME`\n\nstring\n\nOverride basic auth username (default `opencode`)\n\n`OPENCODE_MODELS_URL`\n\nstring\n\nCustom URL for fetching models configuration\n\n---\n\n### [Experimental](#experimental)\n\nThese environment variables enable experimental features that may change or be removed.\n\nVariable\n\nType\n\nDescription\n\n`OPENCODE_EXPERIMENTAL`\n\nboolean\n\nEnable the experimental umbrella flag\n\n`OPENCODE_EXPERIMENTAL_ICON_DISCOVERY`\n\nboolean\n\nEnable icon discovery\n\n`OPENCODE_EXPERIMENTAL_DISABLE_COPY_ON_SELECT`\n\nboolean\n\nDisable copy on select in TUI\n\n`OPENCODE_EXPERIMENTAL_BASH_DEFAULT_TIMEOUT_MS`\n\nnumber\n\nDefault timeout for bash commands in ms\n\n`OPENCODE_EXPERIMENTAL_OUTPUT_TOKEN_MAX`\n\nnumber\n\nMax output tokens for LLM responses\n\n`OPENCODE_EXPERIMENTAL_FILEWATCHER`\n\nboolean\n\nEnable file watcher for entire dir\n\n`OPENCODE_EXPERIMENTAL_OXFMT`\n\nboolean\n\nEnable oxfmt formatter\n\n`OPENCODE_EXPERIMENTAL_LSP_TOOL`\n\nboolean\n\nEnable experimental LSP tool\n\n`OPENCODE_EXPERIMENTAL_DISABLE_FILEWATCHER`\n\nboolean\n\nDisable file watcher\n\n`OPENCODE_EXPERIMENTAL_EXA`\n\nboolean\n\nEnable experimental Exa features\n\n`OPENCODE_EXPERIMENTAL_LSP_TY`\n\nboolean\n\nEnable TY LSP for python files\n\n`OPENCODE_EXPERIMENTAL_PLAN_MODE`\n\nboolean\n\nEnable plan mode\n\n`OPENCODE_EXPERIMENTAL_BACKGROUND_SUBAGENTS`\n\nboolean\n\nEnable background subagent tasks\n\n`OPENCODE_EXPERIMENTAL_EVENT_SYSTEM`\n\nboolean\n\nEnable experimental event system\n\n`OPENCODE_EXPERIMENTAL_NATIVE_LLM`\n\nboolean\n\nEnable native LLM request path\n\n`OPENCODE_EXPERIMENTAL_PARALLEL`\n\nboolean\n\nEnable parallel web search execution\n\n`OPENCODE_EXPERIMENTAL_SCOUT`\n\nboolean\n\nEnable Scout subagent\n\n`OPENCODE_EXPERIMENTAL_WORKSPACES`\n\nboolean\n\nEnable workspace support\n\n[Edit page](https://github.com/anomalyco/opencode/edit/dev/packages/web/src/content/docs/cli.mdx)[Found a bug? Open an issue](https://github.com/anomalyco/opencode/issues/new)[Join our Discord community](https://opencode.ai/discord) Select language EnglishالعربيةBosanskiDanskDeutschEspañolFrançaisItaliano日本語한국어Norsk BokmålPolskiPortuguês (Brasil)РусскийไทยTürkçe简体中文繁體中文 \n\n© [Anomaly](https://anoma.ly)\n\nLast updated: Aug 12, 2026",
+            "metadata": {
+              "truncated": false
+            },
+            "title": "https://opencode.ai/docs/cli (text/html)",
+            "time": {
+              "start": 1786588106390,
+              "end": 1786588106600
+            }
+          },
+          "id": "prt_ff8f30e12001CgNz9YwNvLL2rm",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f2fe5b002wyuF7eYGNSpNqb"
+        },
+        {
+          "reason": "tool-calls",
+          "snapshot": "3764fba139afbb28c8446d11ef2bdb8b4b2d0a2b",
+          "type": "step-finish",
+          "tokens": {
+            "total": 9487,
+            "input": 3024,
+            "output": 319,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 6144
+            }
+          },
+          "cost": 0,
+          "id": "prt_ff8f30fdd001EsPcTqz2XSb31N",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f2fe5b002wyuF7eYGNSpNqb"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_ff8f2fe53001ZJ0ESTgULEKlHW",
+        "role": "assistant",
+        "mode": "plan",
+        "agent": "plan",
+        "variant": "max",
+        "path": {
+          "cwd": "/home/orlando/Projects/CyberSec-Notes/Notes/Linux+",
+          "root": "/home/orlando/Projects/CyberSec-Notes"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 16244,
+          "input": 14034,
+          "output": 81,
+          "reasoning": 209,
+          "cache": {
+            "write": 0,
+            "read": 1920
+          }
+        },
+        "modelID": "deepseek-v4-flash-free",
+        "providerID": "opencode",
+        "time": {
+          "created": 1786588106728,
+          "completed": 1786588110930
+        },
+        "finish": "tool-calls",
+        "id": "msg_ff8f30fe8002NkgBifAEupCQ29",
+        "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7"
+      },
+      "parts": [
+        {
+          "snapshot": "3764fba139afbb28c8446d11ef2bdb8b4b2d0a2b",
+          "type": "step-start",
+          "id": "prt_ff8f3136400150Jv08fziEGR1i",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f30fe8002NkgBifAEupCQ29"
+        },
+        {
+          "type": "reasoning",
+          "text": "Yes, there is. opencode has an `opencode export [sessionID]` command that exports session data as JSON. The user wants to export \"these prompts and session\" into a file in the current directory.\n\nSince I'm in plan mode, I should present a plan. Let me check what sessions exist to identify the current session ID.\n\nLet me look at the plan:\n\n1. Find the current session ID (`opencode session list`)\n2. Export: `opencode export <sessionID> > file.json` (or with `--sanitize` to redact file data)\n\nNote: export is JSON format. The user might prefer markdown for readability. The JSON export is the native option. Alternatives:\n- `opencode share` — creates a share link (opncd.ai), not a local file\n- I could also write a markdown transcript as part of a plan.\n\nLet me check the current sessions to find the session ID. That's a read-only command, fine in plan mode.",
+          "time": {
+            "start": 1786588108238,
+            "end": 1786588109748
+          },
+          "id": "prt_ff8f315ce001huWldwt3IkoXim",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f30fe8002NkgBifAEupCQ29"
+        },
+        {
+          "type": "text",
+          "text": "Yes — opencode has a built-in export command. Let me check the current session to plan this out.",
+          "time": {
+            "start": 1786588109749,
+            "end": 1786588110183
+          },
+          "id": "prt_ff8f31bb50013gO2MThmtAvZWV",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f30fe8002NkgBifAEupCQ29"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "call_00_QsiZHOHw96XH8isQv18S7659",
+          "state": {
+            "status": "completed",
+            "input": {
+              "command": "opencode session list --format json 2>&1 | head -c 3000"
+            },
+            "output": "[\n  {\n    \"id\": \"ses_0071079e8ffeUATmROeR85ZLs7\",\n    \"title\": \"Exam topic practice question generator\",\n    \"updated\": 1786588106729,\n    \"created\": 1786587874839,\n    \"projectId\": \"1cbac71b26e47199f2cf189a47467d720cc8cad2\",\n    \"directory\": \"/home/orlando/Projects/CyberSec-Notes/Notes/Linux+\"\n  },\n  {\n    \"id\": \"ses_0073083f8ffeqHzOlIaHEtbu74\",\n    \"title\": \"LVM and RAID levels study guide\",\n    \"updated\": 1786585928228,\n    \"created\": 1786585775111,\n    \"projectId\": \"1cbac71b26e47199f2cf189a47467d720cc8cad2\",\n    \"directory\": \"/home/orlando/Projects/CyberSec-Notes/Notes/Linux+\"\n  }\n]\n",
+            "metadata": {
+              "output": "[\n  {\n    \"id\": \"ses_0071079e8ffeUATmROeR85ZLs7\",\n    \"title\": \"Exam topic practice question generator\",\n    \"updated\": 1786588106729,\n    \"created\": 1786587874839,\n    \"projectId\": \"1cbac71b26e47199f2cf189a47467d720cc8cad2\",\n    \"directory\": \"/home/orlando/Projects/CyberSec-Notes/Notes/Linux+\"\n  },\n  {\n    \"id\": \"ses_0073083f8ffeqHzOlIaHEtbu74\",\n    \"title\": \"LVM and RAID levels study guide\",\n    \"updated\": 1786585928228,\n    \"created\": 1786585775111,\n    \"projectId\": \"1cbac71b26e47199f2cf189a47467d720cc8cad2\",\n    \"directory\": \"/home/orlando/Projects/CyberSec-Notes/Notes/Linux+\"\n  }\n]\n",
+              "exit": 0,
+              "truncated": false
+            },
+            "title": "opencode session list --format json 2>&1 | head -c 3000",
+            "time": {
+              "start": 1786588110904,
+              "end": 1786588110907
+            }
+          },
+          "id": "prt_ff8f31c7d001lPbtzUnEgZQIKa",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f30fe8002NkgBifAEupCQ29"
+        },
+        {
+          "reason": "tool-calls",
+          "snapshot": "3764fba139afbb28c8446d11ef2bdb8b4b2d0a2b",
+          "type": "step-finish",
+          "tokens": {
+            "total": 16244,
+            "input": 14034,
+            "output": 81,
+            "reasoning": 209,
+            "cache": {
+              "write": 0,
+              "read": 1920
+            }
+          },
+          "cost": 0,
+          "id": "prt_ff8f320430016YmyAwfPfD2ezz",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f30fe8002NkgBifAEupCQ29"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_ff8f2fe53001ZJ0ESTgULEKlHW",
+        "role": "assistant",
+        "mode": "plan",
+        "agent": "plan",
+        "variant": "max",
+        "path": {
+          "cwd": "/home/orlando/Projects/CyberSec-Notes/Notes/Linux+",
+          "root": "/home/orlando/Projects/CyberSec-Notes"
+        },
+        "cost": 0,
+        "tokens": {
+          "total": 16981,
+          "input": 7048,
+          "output": 461,
+          "reasoning": 0,
+          "cache": {
+            "write": 0,
+            "read": 9472
+          }
+        },
+        "modelID": "deepseek-v4-flash-free",
+        "providerID": "opencode",
+        "time": {
+          "created": 1786588110933,
+          "completed": 1786588114422
+        },
+        "finish": "stop",
+        "id": "msg_ff8f320550020RW0FjXv5B0Gsh",
+        "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7"
+      },
+      "parts": [
+        {
+          "snapshot": "3764fba139afbb28c8446d11ef2bdb8b4b2d0a2b",
+          "type": "step-start",
+          "id": "prt_ff8f323cc001Gaqu2O6mHEiYO9",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f320550020RW0FjXv5B0Gsh"
+        },
+        {
+          "type": "reasoning",
+          "text": "The current session is `ses_0071079e8ffeUATmROeR85ZLs7` titled \"Exam topic practice question generator\".\n\nPlan:\n1. Export current session: `opencode export ses_0071079e8ffeUATmROeR85ZLs7 > <file>.json` — native JSON export with all messages/parts.\n2. Optionally use `--sanitize` to redact sensitive data (probably not needed here, but worth mentioning).\n3. Maybe also produce a human-readable markdown log for tracking quizzes? The user said \"as a way of keeping track of conversations\" — JSON is the full-fidelity export. Could offer both: JSON + a markdown transcript.\n\nAlso available: `opencode import` to restore sessions later, and `opencode share` for a shareable link.\n\nI should present a concise plan and maybe ask which format they want. Plan mode: present plan, ask user. Keep it short.",
+          "time": {
+            "start": 1786588111822,
+            "end": 1786588112630
+          },
+          "id": "prt_ff8f323ce0018dLN9LQpnSLhgw",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f320550020RW0FjXv5B0Gsh"
+        },
+        {
+          "type": "text",
+          "text": "Here's the plan:\n\n**Yes — opencode can export this session natively.**\n\n1. **Export the current session to JSON** (full fidelity, includes prompts, answers, and all parts):\n   ```\n   opencode export ses_0071079e8ffeUATmROeR85ZLs7 > session-export.json\n   ```\n   Run from your current directory (`~Projects/CyberSec-Notes/Notes/Linux+`) so it lands there. Optionally add `--sanitize` to redact file contents (probably unnecessary here).\n   - This session can later be restored/re-continued with `opencode import session-export.json`.\n\n2. **Optional: also save a readable markdown transcript** for quick scanning of quiz Q&A (JSON is verbose). I could run the export and convert it to a clean `.md` log once you finish.\n\nQuestions:\n- Do you want just the **raw JSON export**, or also a **markdown transcript** (or both)?\n- Filename preference (e.g., `session-2026-08-12.json`)?\n\nOnce you confirm, I'll run the export. Should I also export the other session (\"LVM and RAID levels study guide\")?",
+          "time": {
+            "start": 1786588112632,
+            "end": 1786588114406
+          },
+          "id": "prt_ff8f326f8001Qf0QRKD3iRHBw4",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f320550020RW0FjXv5B0Gsh"
+        },
+        {
+          "reason": "stop",
+          "snapshot": "3764fba139afbb28c8446d11ef2bdb8b4b2d0a2b",
+          "type": "step-finish",
+          "tokens": {
+            "total": 16981,
+            "input": 7048,
+            "output": 461,
+            "reasoning": 0,
+            "cache": {
+              "write": 0,
+              "read": 9472
+            }
+          },
+          "cost": 0,
+          "id": "prt_ff8f32dee001rgHWETLugbe5g9",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f320550020RW0FjXv5B0Gsh"
+        }
+      ]
+    },
+    {
+      "info": {
+        "role": "user",
+        "time": {
+          "created": 1786588178460
+        },
+        "agent": "build",
+        "model": {
+          "providerID": "opencode",
+          "modelID": "deepseek-v4-flash-free",
+          "variant": "max"
+        },
+        "summary": {
+          "diffs": []
+        },
+        "id": "msg_ff8f4281c001c6wikJNJCTHUBI",
+        "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7"
+      },
+      "parts": [
+        {
+          "type": "text",
+          "text": "Can you create a transcript after every set of questions into a new directory called opencode/test-questions/?",
+          "id": "prt_ff8f4281e0018lhVTWM61TSVsd",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f4281c001c6wikJNJCTHUBI"
+        }
+      ]
+    },
+    {
+      "info": {
+        "parentID": "msg_ff8f4281c001c6wikJNJCTHUBI",
+        "role": "assistant",
+        "mode": "build",
+        "agent": "build",
+        "variant": "max",
+        "path": {
+          "cwd": "/home/orlando/Projects/CyberSec-Notes/Notes/Linux+",
+          "root": "/home/orlando/Projects/CyberSec-Notes"
+        },
+        "cost": 0,
+        "tokens": {
+          "input": 0,
+          "output": 0,
+          "reasoning": 0,
+          "cache": {
+            "read": 0,
+            "write": 0
+          }
+        },
+        "modelID": "deepseek-v4-flash-free",
+        "providerID": "opencode",
+        "time": {
+          "created": 1786588178468
+        },
+        "id": "msg_ff8f42824002J3zppaWSL8tbqZ",
+        "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7"
+      },
+      "parts": [
+        {
+          "snapshot": "3764fba139afbb28c8446d11ef2bdb8b4b2d0a2b",
+          "type": "step-start",
+          "id": "prt_ff8f42a9b001X9p9WvZFqPh8ND",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f42824002J3zppaWSL8tbqZ"
+        },
+        {
+          "type": "reasoning",
+          "text": "The user wants me to create a transcript after every set of questions into a new directory called opencode/test-questions/. \n\nThe path: opencode/test-questions/ relative to where? The current working directory is /home/orlando/Projects/CyberSec-Notes/Notes/Linux+. Probably they mean inside the current workspace. \"into a new directory called opencode/test-questions/\" - the opencode project root is /home/orlando/Projects/CyberSec-Notes (workspace root). The projectId directory is the Linux+ notes folder, which is inside the workspace. Hmm, \"opencode/\" directory probably means a directory literally named \"opencode\" in the current directory. Let me just create it: /home/orlando/Projects/CyberSec-Notes/Notes/Linux+/opencode/test-questions/\n\nSo the workflow: after finishing each set of 10 questions on a topic, I'll export/save the transcript into that directory. For now, set it up and confirm.\n\nI should create the directory now, and confirm the plan. Also decide file format: markdown transcript + optionally JSON export. The user asks \"Can you create a transcript\" — so a markdown transcript makes sense. I'll create the directory and save the session so far as an initial transcript perhaps? The user asked \"after every set of questions\" — future oriented. But I could also do an initial export now to establish the pattern. Let me ask? No — keep it simple. Just create the directory now and confirm the plan. Maybe also save the current conversation-so-far transcript to seed it, since it contains the quiz format rules — that's useful keeping track.\n\nLet me create the directory and write an initial transcript of the setup conversation. I can't easily access raw session data except via opencode export. I could run `opencode export ses_0071079e8ffeUATmROeR85ZLs7` to get JSON and convert to markdown. But the interactive session's current conversation may not be fully in the exported data until saved... Actually opencode stores messages continuously, so export should include what we have so far.\n\nPlan: \n1. mkdir -p opencode/test-questions\n2. Export current session JSON to that dir, and create a markdown transcript file with the Q&A format rules (initial setup). But generating markdown from the full conversation — maybe I can use `opencode export` and it's JSON. Converting into readable markdown myself from the JSON might be heavy but doable via jq.\n\nSimpler approach: I'll save the transcript as markdown manually capturing the conversation, plus the raw JSON for fidelity. Actually the user said \"create a transcript after every set of questions\" — the key deliverable going forward. For now, set up directory and confirm.\n\nI'll do: create directory, export current session JSON as a baseline (session-setup.json), and write a short README/instruction file? Don't overdo. Keep it minimal: create dir, export JSON baseline, reply confirming + remind what happens after each set.\n\nActually, to keep opaque: after each quiz set, I'll save a markdown transcript (questions, options, your answers, grading, explanations) into that dir. Memory: since this is the same session, I retain context; files provide persistence. Naming: topic-based, e.g., 01-storage-management.md.\n\nLet me create the directory now and do the baseline export.",
+          "time": {
+            "start": 1786588179100,
+            "end": 1786588183702
+          },
+          "id": "prt_ff8f42a9c0016oVuh0zgHUG0fq",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f42824002J3zppaWSL8tbqZ"
+        },
+        {
+          "type": "tool",
+          "tool": "bash",
+          "callID": "call_3616d7206db6493b87578b69",
+          "state": {
+            "metadata": {
+              "output": "Exporting session: ses_0071079e8ffeUATmROeR85ZLs7\n"
+            },
+            "status": "running",
+            "input": {
+              "command": "mkdir -p opencode/test-questions && opencode export ses_0071079e8ffeUATmROeR85ZLs7 > opencode/test-questions/session-setup.json && ls -la opencode/test-questions/"
+            },
+            "time": {
+              "start": 1786588184797
+            }
+          },
+          "id": "prt_ff8f43c99001wbOeb4jp1hGfBK",
+          "sessionID": "ses_0071079e8ffeUATmROeR85ZLs7",
+          "messageID": "msg_ff8f42824002J3zppaWSL8tbqZ"
+        }
+      ]
+    }
+  ]
+}
