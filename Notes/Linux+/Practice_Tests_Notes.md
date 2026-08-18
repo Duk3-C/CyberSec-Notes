@@ -17,6 +17,12 @@ If a certificate authority fails to uphold their responsibilities when issuing c
 
 Webhooks are event-driven and can notify an application or system when a specific event occurs, such as CPU usage exceeding a threshold. This notification can trigger an automated workflow to scale resources, making them ideal for dynamic environments.
 
+**x86_64/AMD64** is the 64-bit extension of the x86 architecture and is the most widely used architecture for modern servers. It supports backward compatibility with 32-bit applications, which meets the requirement for legacy software support. x86_64 can address more than 4GB of memory and is universally supported by Linux distributions. 
+
+**x86** is a legacy 32-bit system that is not longer suitable for  modern server environments.It has a memory addressing limit of 4GB and does not support 64-bit applicationsm which are now standard in most server deployments.
+
+**RISC-V** is a modular and customizable architecture, but it is not widely adopted to production environments.
+
 ---
 
 ```bash
@@ -25,9 +31,10 @@ modload module param=value
 ```bash 
 modprobe module param=value
 ```
+
 Both insmod and modprobe accept module parameters in the form param=value. `modprobe` is preferred as it handles dependencies. Parameters can also be specified in /etc/modprobe.d/ files for persistent configuration.
 
-*auditd* is the Linux audit daemon that records security-relevant envents to /var/log/audit/audit.log. Rules are added with auditctl and made persistent in /etc/audit/rules.d/. ausearch and aureport query and summarize the audit logs. 
+**auditd** is the Linux audit daemon that records security-relevant envents to /var/log/audit/audit.log. Rules are added with auditctl and made persistent in /etc/audit/rules.d/. ausearch and aureport query and summarize the audit logs. 
 *rsyslog and journald* handle general system messages, not the audit trail.
 
 ``crontab -l`` lists the current user's cron jobs. ``crontab -e`` edits them. /etc/crontab is the system cron file. User crontabs are restored in /var/spool/cron/ or /var/cron/tabs. 
@@ -89,6 +96,10 @@ Low Input/Output Operations per Second (IOPS) indicate a faulty drive or data bo
 
 The systemd management system includes a very robust journaling and logging component that can be useful for understanding system and application crashes. The systemd journal is a different and infependent service from rsyslog, which is the traditional Linxu log file service.
         
+``NFS`` is specifically designed for environments where Linux clients access Linux servers. It is the preferred protocol in homogeneous Linux environments because it offers seamless integration and compatibility.
+
+In mixed environments with both Windows and Linux systems, the ``SMB`` protocol is the better choice because it is compatible with both operating systems.
+
 ---
 
 **Docker**:
@@ -100,5 +111,11 @@ The systemd management system includes a very robust journaling and logging comp
 ---
 
 ``zip -e`` creates encrypted zip archives. ``gpg -c`` (symmetric) encrypts any file with a password. tar itself does not support encryption directly but can piped to gpg. For string encryption, prefer gpg over zip encryption.
+
+**gzip**:
+    To preserve the timestamp and original filename when compressing a file with gzip, you would use the ``-N`` option.
+    the ``-n`` option in gzip omits the original file and timestamp.
+    The ``-v`` option in gzip displays the name and percentage reduction of the compressed or decompressed file. An abreaviation of *verbose*.
+    The ``-d`` option in gzip decompresses the file.
 
 
