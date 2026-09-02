@@ -1,5 +1,7 @@
 ## Notes taken from some practice exams I took for the test
 
+
+### Concepts
 **UIDs**:
     system UIDs range from 0 - 999.
 
@@ -22,6 +24,10 @@ Webhooks are event-driven and can notify an application or system when a specifi
 **x86** is a legacy 32-bit system that is not longer suitable for  modern server environments.It has a memory addressing limit of 4GB and does not support 64-bit applicationsm which are now standard in most server deployments.
 
 **RISC-V** is a modular and customizable architecture, but it is not widely adopted to production environments.
+
+**Standard permissions** provide a way for system administrators to enforce access levels on users for files and directories. Issues occur when the user does not habe appropriate access to these files and directories.
+
+
 
 ---
 
@@ -66,7 +72,8 @@ Corrupted or incomplete metadata is a common repository misconfiguration issue a
 
 ---
 
-``dpkg -l`` lists installed packages on Debian/Ubuntu. 
+``dpkg -l`` lists installed packages on Debian/Ubuntu. This command is useful for generating a complete inventory of installed software. 
+``dpkg -s <package-name>`` is specifically designed to display detailed information about a single package on a Debian-based system. It provides details such as the package's version, installation status, and a brief description, which directly satisfies the requirements of the scenario.
 ``apt`` show displays detailed information.
 ``rpm -qi`` shows information on RHEL/CentOS.
     the specific command depends on the distribution and package management system.
@@ -85,6 +92,12 @@ The command ``yum provides zsh`` displays the contents of the zsh package. Zsh i
 
 The ``dmesg`` command prints any messages sent to the kernel's message buffer during and after system boot.
 
+FILE MANIPULATION:
+    The ``cat`` command displays the contents of a file. If multiple files are added to the commandm, the contents of each file will be displayed in a **single text stream**.
+    The ``cut`` command removes sections from each line of a file.
+    ``pr`` formats a text file for printing.
+    ``nl`` places a line number in from of each line in a text file and sends the result to standard output.
+
 ---
 
 **Protocols**:
@@ -99,6 +112,9 @@ The systemd management system includes a very robust journaling and logging comp
 ``NFS`` is specifically designed for environments where Linux clients access Linux servers. It is the preferred protocol in homogeneous Linux environments because it offers seamless integration and compatibility.
 
 In mixed environments with both Windows and Linux systems, the ``SMB`` protocol is the better choice because it is compatible with both operating systems.
+
+``PXE`` uses the **Trivial File Transfer Protocol (TFTP)** to transfer boot files from the server to the client.
+
 
 ---
 
@@ -118,4 +134,6 @@ In mixed environments with both Windows and Linux systems, the ``SMB`` protocol 
     The ``-v`` option in gzip displays the name and percentage reduction of the compressed or decompressed file. An abreaviation of *verbose*.
     The ``-d`` option in gzip decompresses the file.
 
-
+The ``sudo kill -9 <PID>`` command send the SIGKILL(Signal 9) to the process, which immediately and forcefully terminates it. This is the appropriate action when a process is unresponsive and consuming excessive resources, a it bypasses the process's ability to handle the termination gracefully.
+The ``sudo kill -15 <PID>`` command sends the SIGTERM(Signal 15) to the process, which requests a graceful shutdown. While this is the preferred method for terminating processes, it may not work if the process is unresponsive.
+The ``sudo renice -10 <PID>`` command adjusts the priority level of the process to make it more CPU-intensive(closer to -20). While this might improve the performance of a critical process. It does not terminate the process.
