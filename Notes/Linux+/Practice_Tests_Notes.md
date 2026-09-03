@@ -1,6 +1,5 @@
 ## Notes taken from some practice exams I took for the test
 
-
 ### Concepts
 **UIDs**:
     system UIDs range from 0 - 999.
@@ -27,9 +26,27 @@ Webhooks are event-driven and can notify an application or system when a specifi
 
 **Standard permissions** provide a way for system administrators to enforce access levels on users for files and directories. Issues occur when the user does not habe appropriate access to these files and directories.
 
+The use of **Special Characters** is discouraged when naming files and directories due to known issues they can cause in Linux environments. 
 
+**Agentless monitoring** approaches are generally less robust and provide less comprehensive data than agent-based solutions.
+Agentless Monitoring Tools rely on existing system protocols like SNMP and SSH to gather data without requiring additional software installation.
+
+**Log Aggregation tools** are useful for analyzing logs but do not provide real-time health checks or detailed performance data.
+
+Systemd .timer files can replace schedulers, such as cron. Schedulers permit administrators and users to specify when an event should occur.
+
+The **Filesystem Hierarchy Standard**(FHS) creates a naming convention that helps administrators, users, and applications consistently find the files they seek.
+
+The *default.target* unit file points to the selected target - either command line interface (CLI) referencing *multi-user.target* or graphical user interface (GUI) referencing *graphical.target.*
+
+**Configuration Management** is the process of making sure that systems are set to match security and performance requirements.
+**Provisioning** refers to deployment tasks, while configuration relates to defining settings after the deployment process is complete.
+
+**Service Mesh** is a dedicated infrastructure layer managed by code that provides service-to-service interaction in a container environment.
 
 ---
+
+### Commands
 
 ```bash
 modload module param=value
@@ -52,8 +69,8 @@ On systemd-networkd systems, use networkctl renew INTERFACE. Some distributions 
 
 The noatime mount option disables the updating of access times (atime) on files when they are read. This reduces disk I/O and can significantly improve performance, expecially on systems with many file reads. This is commonly used on SSDs and database servers.
 
-/var/log/dmesg contains kernel ring buffer messages. journalctl -k shows kernel messages from systemd journal. 
-/var/log/boot.log may contain boot service messages but varies by distribution and configuration.
+``/var/log/dmesg`` contains kernel ring buffer messages. journalctl -k shows kernel messages from systemd journal. 
+``/var/log/boot.log`` may contain boot service messages but varies by distribution and configuration.
 
 ``nft list ruleset`` displays all nftables rules across all tables and chains. 
 nft is the modern replacement for iptables. 
@@ -61,7 +78,37 @@ nft is the modern replacement for iptables.
 
 The `/usr/share/zoneinfo/` directory contains the regional time zone files that Linux systems use to configure the system's time zone. These files are organized by region and are not raw text files but special files used by the system.
 
+``swapon`` is used to activate a specific swap space. The ``swapon -a`` command activates all swap spaces listed in the ``/etc/fstab`` file.
+
+To redirect the output of the ``ip a`` command and have it overwrite any existing data, you would use the ``ip a > {file_name}`` command. Using the ``<`` instead would read from a file instead of outputting to a file. Using the ``>>`` redirector appends the output to the file instead of overwriting it.
+
+The ``|`` (pipe) operator sends the output of one command to another command if that previous command was successful.
+
+The ``lsscsi`` command displays information about each drive. Data for each device is displayed on a separate line and includes the device name, manufacturer, model, etc.
+
+The ``lsblk`` command displays information on storage devices of which the system is aware. The information includes the device name, capacity, and mount point(if configured).
+
+The ``blkid`` command displays known information on the partitions. One particularly useful piece of information is the Universally Unique ID (UUID) of the partition.
+
+The ``fcstat`` command displays information about existing Fibre Channel adapters. The technician typically uses theses adapters and storage-area network (SAN) solutions in conjunction. It also contains subcommands that provide additional detail, such as link statistics.
+
+The ``fg`` command component is associated with managing job functions and represents foreground. Using the ``fg`` component, the technician can bring jobs the system is working out of sight back into sight.
+
+``jobs`` are a subset of processes and refer specifically to any process the current user has started. Users can display processes they are running by using the ``jobs`` command.
+
+The ``bg`` command components manages job functions and represents background. Using ``bg``, the user transitions the job to be out of sight. WHen working with Ctrl+Z, the user sends the job to the background using bg %[1].
+
+The ``pidstat`` command is specifically designed to monitor performance statistics for individual processes. The ``-u`` option focuses on CPU usage, and the command ``pidstat -u 1 5`` will display CPU usage for individual processes every second for five intervals. This makes it the ideal tool for identifying which process is consuming excessive CPU resources.
+
+The ``mpstat`` command is used to monitor overall CPU performance, not individual processes. While it provides detailed statistics about CPU usage, it does not break down resource usage by process.
+
+The ``ps aux`` command provides a snapshot of all running processes and their resource usage at a single point in time. However, it does not provide continuous monitoring or allow to track CPU usage over intervals. This makes it less effective for identifying a process causing performance issues over time.
+
 ---
+
+### Repository Management
+
+Git excels at tracking and integrating changes during development, especially in the context of large, distributed software-development projects where many programmers work on different aspects of the same application.
 
 **Git Commands**:
     ``git add .`` stages all changes in the current directory and subdirectories. 
@@ -71,6 +118,8 @@ The `/usr/share/zoneinfo/` directory contains the regional time zone files that 
 Corrupted or incomplete metadata is a common repository misconfiguration issue and can prevent the system from resolving dependencies or fetching package information, leading to errors during package installation or updates.
 
 ---
+
+### Package Managers
 
 ``dpkg -l`` lists installed packages on Debian/Ubuntu. This command is useful for generating a complete inventory of installed software. 
 ``dpkg -s <package-name>`` is specifically designed to display detailed information about a single package on a Debian-based system. It provides details such as the package's version, installation status, and a brief description, which directly satisfies the requirements of the scenario.
@@ -98,10 +147,15 @@ FILE MANIPULATION:
     ``pr`` formats a text file for printing.
     ``nl`` places a line number in from of each line in a text file and sends the result to standard output.
 
+The ``cargo.toml`` file is the configuration file for a Rust Project, and the ``[dependencies]`` section is wherer you define the external crates (dependencies) your project requires.
+
+The ``cargo install`` command is used to install standalone binaries (executables) from crates, not to add dependencies to a project. Using this command would not add a specific dependency, and it would not modify the cargo.toml file.
+
 ---
 
-**Protocols**:
-    *NTP* (Network Time Protocol) synchronizes system clocks over a network. The ntpd daemon or systemd-timesyncd service handles NTP pon Linux. Accurate time is critical for logging, authentication (Kerberos), and distributed systems. chrony is a newer alternative to ntpd.
+### Protocols
+
+*NTP* (Network Time Protocol) synchronizes system clocks over a network. The ntpd daemon or systemd-timesyncd service handles NTP pon Linux. Accurate time is critical for logging, authentication (Kerberos), and distributed systems. chrony is a newer alternative to ntpd.
 
 An Access Control List (ACL) is a list of permissions attached to an object. System administrators can use ACLs when the traditional file permission concept does not suffice and can lead to issues when users are not on the ACL.
 
@@ -115,16 +169,25 @@ In mixed environments with both Windows and Linux systems, the ``SMB`` protocol 
 
 ``PXE`` uses the **Trivial File Transfer Protocol (TFTP)** to transfer boot files from the server to the client.
 
+The primary Linux task scheduler is ``cron``. This tool references a crontab file to determine whether tasks assigned to a specific minute exist. A system-wide crontab file is located at ``/etc/crontab``, and a per-user crontab is at ``/var/spool/cron/crontabs``.
+
+*Chrony* is a modern implementation of NTP that supports secure communication using **Transport Layer Security (TLS)**. By omplementing Chrony with NTP over TLS, you ensure that time synchronization is both accurate and secure, resolving any issue of insecure protocols while maintaining consistency accross servers.
 
 ---
 
-**Docker**:
-    RUN executes commands during the image build, creating new layers.
-    CMD provides defaults for running containers. 
-    ENTRYPOINT configures the container as an executable. 
-    Multiple RUN commands can be combined with && to reduce layers.
+### Docker
+
+RUN executes commands during the image build, creating new layers.
+CMD provides defaults for running containers. 
+ENTRYPOINT configures the container as an executable. 
+Multiple RUN commands can be combined with && to reduce layers.
+
+**Container registries** are a critical part of the DevOps infrastructure, enabling continuous integration and continuous deployment (CI/CD) by providing a standardized and accessible location where automation and orchestration tools pull images without human intervention.
+Some organizations grow beyond the multicontainer environments provided by Docker, which builds multicontainer clusters using the Compose tool. Compose can be translated into something Kubernetes can understand, allowing for an easy transition into a larger, orchestrated container environment.
 
 ---
+
+### Processes
 
 ``zip -e`` creates encrypted zip archives. ``gpg -c`` (symmetric) encrypts any file with a password. tar itself does not support encryption directly but can piped to gpg. For string encryption, prefer gpg over zip encryption.
 
@@ -137,3 +200,7 @@ In mixed environments with both Windows and Linux systems, the ``SMB`` protocol 
 The ``sudo kill -9 <PID>`` command send the SIGKILL(Signal 9) to the process, which immediately and forcefully terminates it. This is the appropriate action when a process is unresponsive and consuming excessive resources, a it bypasses the process's ability to handle the termination gracefully.
 The ``sudo kill -15 <PID>`` command sends the SIGTERM(Signal 15) to the process, which requests a graceful shutdown. While this is the preferred method for terminating processes, it may not work if the process is unresponsive.
 The ``sudo renice -10 <PID>`` command adjusts the priority level of the process to make it more CPU-intensive(closer to -20). While this might improve the performance of a critical process. It does not terminate the process.
+
+**Systemd** allows processes to start in parallel, which improves system startup efficiency. **Systemd** actually uses control groups (cgroups) to organize resources hierarchically. Systemd calls these collected sets of processes "control groups", so cgroups are an integral part of systemd, not something it eliminates.
+
+The **systemd** command to manage startup options is **systemctl**. This command relies on the command subcommand argument syntax. One subcommand of systemctl is **mask**, which prevents a service from being started by any other service. Another subcommand of **systemctl** is **status**, which displays the current status of the service or daemon.
