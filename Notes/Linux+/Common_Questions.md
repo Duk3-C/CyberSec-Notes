@@ -25,4 +25,11 @@
 - An employee cannot save a large file to their device due to exceeding storage capacity. What is the cause of the employee not being able to save the file?
     Low Disk space occurs when the disk's storage has reached its capacity, meaning that the disk itself can hold no additional data.
 
-
+- A Linux administrator is testing a web application on a laboratory service and needs to temporarily allow DNS and HTTP/HTTPS traffic from the internal network. What command will accomplish this task? 
+    ``firewall-cmd --add-service={dns, http, https} --zone=internal``
+    *Explanation* - The correct command uses firewall-cmd, which is the proper management tool for firewalld rules.
+    Why it works:
+        ``--add-service`` allows predefined services
+        ``{dns, http, https}`` add multiple services at once
+        ``--zone=internal`` applies rules only  to the internal network zone
+        Without ``--permanent``, the change is temporary (lost after reboot), matching the requirement.

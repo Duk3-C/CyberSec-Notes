@@ -44,6 +44,8 @@ The *default.target* unit file points to the selected target - either command li
 
 **Service Mesh** is a dedicated infrastructure layer managed by code that provides service-to-service interaction in a container environment.
 
+A Management Information Base (MIB) is a hierarchical database that organizes and defines the structure of network management data. It provides a standardized way for SNMP agents and managers to communicate by defining the objects that can be monitored or managed. MIBs do not store configuration files; they define the structure of data that SNMP agents can report on or manage.
+
 ---
 
 ### Commands
@@ -172,6 +174,8 @@ In mixed environments with both Windows and Linux systems, the ``SMB`` protocol 
 The primary Linux task scheduler is ``cron``. This tool references a crontab file to determine whether tasks assigned to a specific minute exist. A system-wide crontab file is located at ``/etc/crontab``, and a per-user crontab is at ``/var/spool/cron/crontabs``.
 
 *Chrony* is a modern implementation of NTP that supports secure communication using **Transport Layer Security (TLS)**. By omplementing Chrony with NTP over TLS, you ensure that time synchronization is both accurate and secure, resolving any issue of insecure protocols while maintaining consistency accross servers.
+
+When devices have an IP address starting with "169.254", it indicates that they have assigned themselves an Automatic Private IP addressing (APIPA) address. This happens when the devices fail to obtain an IP address from a DHCP server.
 
 ---
 
