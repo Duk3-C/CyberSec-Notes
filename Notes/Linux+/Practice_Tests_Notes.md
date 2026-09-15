@@ -114,6 +114,17 @@ The ``ps aux`` command provides a snapshot of all running processes and their re
 ``objdump -x`` shows extensive information including needed libraries.
 Missing libraries cause "command not found" or "cannot open shared object file" errors. LD_LIBRARY_PATH can affect library loading.
 
+``dmesg | grep -i usb`` and ``journalctl -k | grep usb`` both show kernel USB messages. dmesg shows the kernel ring buffer. ``journalctl -k`` shows kernel messages from the systemd jounral.
+
+``lsusb -v`` shows device information, not connection events.
+
+``echo``:
+    ``echo 1`` drops page cache only.
+    ``echo 2`` drops dentries and inodes.
+    ``echo 3`` drops all caches.
+    ``sync`` first writes dirty pages to disk.
+    Dropping caches is usually unnecessary as Linux manages memory efficiently.
+
 ---
 
 ### Repository Management
@@ -208,6 +219,11 @@ Some organizations grow beyond the multicontainer environments provided by Docke
 
 ``podman run`` starts a container directly as a process tree owned by the invoking user, without a background daemon (unlike Docker, which requires dockerd). It supports rootless containers when configured with slirp4netns/fuse-overlayfs, improving security by avoiding root-privileged daemons.
 
+``docker ps`` lists running containers. 
+``docker ps -a`` shows all containers including stopped ones.
+``docker images`` lists available images.
+Understanding container lifecycle is important for modern Linux administration.
+
 ---
 
 ### Processes
@@ -231,3 +247,7 @@ The **systemd** command to manage startup options is **systemctl**. This command
 To both stop a running service and prevent it from starting at boot, you need both ``systemctl stop``(stops the current process) and ``systemctl disable``(removes the service from boot startup). These are separate operations that must both be executed.
 
 ``/etc/login.defs`` defines password aging defaults (PASS_MAX_DAYS, PASS_MIN_DAYS, PASS_WARN_AGE).
+
+The *blacklist* directive in ``/etc/modprobe.d/`` prevents automatic loading. The module can still be loaded manually. Some distributions use ``/etc/modprobe.d/blacklist.conf`` or separate files per module. This is useful for problematic hardware drivers.
+
+
