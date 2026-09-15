@@ -106,6 +106,14 @@ The ``mpstat`` command is used to monitor overall CPU performance, not individua
 
 The ``ps aux`` command provides a snapshot of all running processes and their resource usage at a single point in time. However, it does not provide continuous monitoring or allow to track CPU usage over intervals. This makes it less effective for identifying a process causing performance issues over time.
 
+``lshw`` provides comprehensive hardware inventory.
+``dmidecode`` reads DMI tables from BIOS.
+``inxi``(if installed) provides formatted system information.
+
+``ldd`` shows shared library dependencies.
+``objdump -x`` shows extensive information including needed libraries.
+Missing libraries cause "command not found" or "cannot open shared object file" errors. LD_LIBRARY_PATH can affect library loading.
+
 ---
 
 ### Repository Management
@@ -118,6 +126,12 @@ Git excels at tracking and integrating changes during development, especially in
     ``git push`` uploads commits to a remote repository.
 
 Corrupted or incomplete metadata is a common repository misconfiguration issue and can prevent the system from resolving dependencies or fetching package information, leading to errors during package installation or updates.
+
+Both ``git checkout`` and ``git switch`` let you switch to a different branch of the repository. ``git switch`` was introduced in Git 2.23 as a clearer alternative to git checkout.
+
+Continuous Integration (CI) automatically builds and tests every commit pushed to a shared repository, surfacing integration conflicts early. CI pipelines are commonly defined in files such as .gitlab-ci.yml, Jenkinsfile, or GitHub Actions worflows.
+COntinuous Delivery keeps releases deployable at any time.
+COntinuous Deployment automatically deploys every passing build to production.
 
 ---
 
@@ -177,9 +191,12 @@ The primary Linux task scheduler is ``cron``. This tool references a crontab fil
 
 When devices have an IP address starting with "169.254", it indicates that they have assigned themselves an Automatic Private IP addressing (APIPA) address. This happens when the devices fail to obtain an IP address from a DHCP server.
 
+``firewalld`` is the default firewall management tool on RHEL/CentOS/Fedora.
+``firewall-cmd --list-all`` shows configuration for the default zones. ``--get-active-zones`` shows zones with assigned interfaces. ``--state`` shows if firewalld is running.
+
 ---
 
-### Docker
+### Containerization
 
 RUN executes commands during the image build, creating new layers.
 CMD provides defaults for running containers. 
@@ -188,6 +205,8 @@ Multiple RUN commands can be combined with && to reduce layers.
 
 **Container registries** are a critical part of the DevOps infrastructure, enabling continuous integration and continuous deployment (CI/CD) by providing a standardized and accessible location where automation and orchestration tools pull images without human intervention.
 Some organizations grow beyond the multicontainer environments provided by Docker, which builds multicontainer clusters using the Compose tool. Compose can be translated into something Kubernetes can understand, allowing for an easy transition into a larger, orchestrated container environment.
+
+``podman run`` starts a container directly as a process tree owned by the invoking user, without a background daemon (unlike Docker, which requires dockerd). It supports rootless containers when configured with slirp4netns/fuse-overlayfs, improving security by avoiding root-privileged daemons.
 
 ---
 
@@ -208,3 +227,7 @@ The ``sudo renice -10 <PID>`` command adjusts the priority level of the process 
 **Systemd** allows processes to start in parallel, which improves system startup efficiency. **Systemd** actually uses control groups (cgroups) to organize resources hierarchically. Systemd calls these collected sets of processes "control groups", so cgroups are an integral part of systemd, not something it eliminates.
 
 The **systemd** command to manage startup options is **systemctl**. This command relies on the command subcommand argument syntax. One subcommand of systemctl is **mask**, which prevents a service from being started by any other service. Another subcommand of **systemctl** is **status**, which displays the current status of the service or daemon.
+
+To both stop a running service and prevent it from starting at boot, you need both ``systemctl stop``(stops the current process) and ``systemctl disable``(removes the service from boot startup). These are separate operations that must both be executed.
+
+``/etc/login.defs`` defines password aging defaults (PASS_MAX_DAYS, PASS_MIN_DAYS, PASS_WARN_AGE).

@@ -33,3 +33,4 @@
         ``{dns, http, https}`` add multiple services at once
         ``--zone=internal`` applies rules only  to the internal network zone
         Without ``--permanent``, the change is temporary (lost after reboot), matching the requirement.
+
