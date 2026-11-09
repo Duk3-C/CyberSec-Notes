@@ -13,5 +13,3 @@
     refers to information that humans can easily understand and interpret without additional processing or translation. Human-readable data describes a format that is accessible and readable, such as text, images, or multimedia content. Non-Human-Readable data refers to data that is not easily understood or interpreted by humans in its raw form. It may be in a machine-readable format, such as binary code, encrypted data, or data decipher and interpret. This kind of data often requires additional processing or transformation to make it understandable to humans.
 
 ---
-
-

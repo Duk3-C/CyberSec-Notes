@@ -66,4 +66,41 @@ Supply Chain risk comes from relationships an organization already trusts. Rathe
 
 A **software bill of materials (SBOM)** is the ***SYO-701*** answer when a question asks how to know exactly which components and versions ship inside a product, which is essential for responding fast to a dependency disclosure.
 
-A negligent insider intends no harm yet can cause a breach, while a compromised insider is technically an outsider operating through a legitimate account.
+## The Three Insider Types 
+- Malicious Insider - Intentionally misuses access | Example: Copies source code before resigning
+- Negligent Insider - Creates risk through carelessness | Example: Uploads restricted date to personal cloud
+- Compromised Insider - Account controlled by an attacker | Example: Valid VPN login from an impossible-travel location
+- Privileged Insider - Elevated access, broad blast radius | Example: Admin disables logs before exfiltrating data 
+
+The deciding clue is **trusted access**, not motive. A negligent insider intends no harm yet can cause a breach, while a compromised insider is technically an outsider operating through a legitimate account.
+
+# Threats, Vulnerabilities, and Mitigations - Attacks 
+---
+
+## Malware Behaviors and Indicators
+
+**Fileless Malware** is a high-yield topic: it lives in memory and abuses trusted signed binaries (a technique called living-off-the-land) so traditional signature antivirus sees little. PowerShell with an encoded `-enc` command line, `wmic`, `mshta`, and `rundll32` are classic indicators. The behavior, not the file, is the giveaway.
+
+**Observed Behavior and What it Suggests**
+- Mass file encryption with extension renames - Ransomware or destructive wiper
+- Credential access from LSASS memory or browser stores - Infostealer or post-exploitation tool
+- New scheduled task or Run-key registry value - Persistence mechanism
+- PowerShell downloading and decoding content - Fileless / Staged payload
+- DNS queries to a random-looking domain every 60 seconds - Commands-and-control beaconing
+- Lateral movement using admin shares (C, ADMIN) - Compromised privileged credentials
+
+## Persistence and Stealth Mechanisms
+
+Beyond the initial infection, exam scenarios test how malware stays. Persistence keeps the malware running accross reboots and logoffs, while stealth hides it from defenders. Recognizing these mechanisms in a description lets you classify the threat and choose eradication and actually removes it rather than just killing a single process.
+
+A **Potentially Unwanted Program (PUP)** is a softer category - adware or bundled toolbars that are not overtly malicious but degrade the system and may track users. The exam contrasts PUPs with true malware to test whether you over-escalate a low-severity finding.
+
+## Distinguishing Authentication Attacks Patterns
+
+Attack  |   Pattern     |   Best Clue 
+Brute Force |   Many guesses against one account or service |   High failed-attempt count for a single username
+Password spraying   |   One or a few common passwords accross many users    |   Low failures per user, many usernames affected
+Credential stuffing |   Reused breached username/password pairs |   Successful logins from residential proxies or odd geos
+Dictionary Attack   |   Wordlist plus mutations |   Common words and leetspeak variants
+Rainbow table   |   Precomputed unsalted-hash lookup    |   Stolen unsalted hashes cracked instantly
+

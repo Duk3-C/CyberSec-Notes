@@ -10,3 +10,10 @@ A **Tabletop Exercise** is a discussion-based session where the incident respons
 **Change Management** is the formal process for requesting, assessing, authorizing, shceduling, implementing, validating, and documenting production changes. The appropriate change authority depends on the organization's process; higher-risk changes also need testing and a workable backout plan.
 
 
+While a non-disclosure agreement (NDA) holds importance in protecting sensitive information, it is not the primary purpose of the SLA inclusion in the contract.
+
+## SLA (Security Level Agreement)
+A contract that outlines the services, performance metrics, and responsibilities of security providers and customers. It ensures clear expectations and accountability regarding security measures and compliance.
+
+A cloud service provider actively includes an SLA to define the level of service it must deliver, covering performance metrics, reponse times, and availability.
+An SLA's primary purpose is not to outline the intentions and expectations of parties in a partnership. This is the role of a Memorandum of Understanding (MOU).
