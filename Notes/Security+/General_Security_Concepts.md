@@ -103,4 +103,18 @@ Password spraying   |   One or a few common passwords accross many users    |   
 Credential stuffing |   Reused breached username/password pairs |   Successful logins from residential proxies or odd geos
 Dictionary Attack   |   Wordlist plus mutations |   Common words and leetspeak variants
 Rainbow table   |   Precomputed unsalted-hash lookup    |   Stolen unsalted hashes cracked instantly
+Phishing    |   Deceptive message or cloned site    |   User reports a link, fake login page captured
+MFA fatigue / push bombing  |   Repeated push prompts until approval    |   Many denied or ignored MFA pushes 
+Shoulder surfing    |   Observing secrets physically    |   Public area, visible screen or keypad
+
+# Labeling, Sovereignty, and Geolocation
+---
+**Labeling** (visual markings, file metadata tags, or document headers) lets both humans and automated tools such as DLP enforce handling. 
+**Data Sovereignty** means data is subject to the laws of the country where it physically resides.
+**Data Residency/Geolocation** requirements force data to stay in a defined region. A scenario that says "EU customer records must remain on EU servers" is testing sovereignty, not encryption.
+
+## Worked Scenario
+---
+A product team exports support cases to a spreadsheet holding names, emails, notes, and partial account IDs. Even though the source ticketing system is protected, the export is a **new copy** of confidential data and must be reclassified, stored in an approved workspace, restricted to the project team, given a retention/expiration date, and securely deleted when analysis ends. Better still; export only needed columns and mask identifiers (**data minimization** applied at the handling layer).
+
 
