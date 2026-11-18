@@ -107,6 +107,8 @@ Phishing    |   Deceptive message or cloned site    |   User reports a link, fak
 MFA fatigue / push bombing  |   Repeated push prompts until approval    |   Many denied or ignored MFA pushes 
 Shoulder surfing    |   Observing secrets physically    |   Public area, visible screen or keypad
 
+OAuth is an open standard for access delegation, allowing users to grant websites or applications access to their information on other websites giving them the passwords.
+
 # Labeling, Sovereignty, and Geolocation
 ---
 **Labeling** (visual markings, file metadata tags, or document headers) lets both humans and automated tools such as DLP enforce handling. 
