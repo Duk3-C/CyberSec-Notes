@@ -41,7 +41,7 @@ A **Hash** is a one-way digest; you cannot decrypt it back to the original. Good
 
 **Public Key Infrastructure (PKI)** binds public keys to identities through signed certificates and a chain of trust.
 
-## Scenario Walkthrough
+### Scenario Walkthrough
 A team publishes an installer and wants customers to confirm it is unaltered and genuinely theirs. A bare hash detects accidental change, but an attacker can post a new hash beside a tempered file. A **digital signature** is strongerl the team signs with its private key and customers verify with the public key via a trusted certificate, delivering integrity, authentication, and Non-Repudiation at once.
 
 # Social Engineering Types and Clues 
@@ -89,6 +89,17 @@ The deciding clue is **trusted access**, not motive. A negligent insider intends
 - DNS queries to a random-looking domain every 60 seconds - Commands-and-control beaconing
 - Lateral movement using admin shares (C, ADMIN) - Compromised privileged credentials
 
+## Malicious Activity Types
+**Living off the Land (LOtL)**:
+    Abusing legitimate, already-present system binaries or processes for malicious activity. Because the activity uses trusted components rather than a new recognizable executable, behavior and context are important for detection.
+
+**Downgrade Attack**:
+    Interferes with negotiation so the parties use a weaker protocol or cipher suite.
+
+**Buffer Overflow**:
+    occurs when an attacker sends more data than a buffer can hold, causing the excess data to overwrite adjacent memory. 
+    By overwriting the return address of the stack, the attacker can redirect program execution to malicious code. Buffer overflows are particularly dangerous in languages like C and C++ that do not perform automatic bounds checking on memory operations.
+
 ## Persistence and Stealth Mechanisms
 
 Beyond the initial infection, exam scenarios test how malware stays. Persistence keeps the malware running accross reboots and logoffs, while stealth hides it from defenders. Recognizing these mechanisms in a description lets you classify the threat and choose eradication and actually removes it rather than just killing a single process.
@@ -109,14 +120,26 @@ Shoulder surfing    |   Observing secrets physically    |   Public area, visible
 
 OAuth is an open standard for access delegation, allowing users to grant websites or applications access to their information on other websites giving them the passwords.
 
+## Vulnerability Types 
+
+**Zero-day Vulnerability**:
+    a previously unknown security flaw that is disclosed or exploited before the vendor has an opprtunity to develop and release a patch. The term 'Zero-day' refers t the fact that the vendor has had zero days to fix the issue. 
+    These Vulnerabilities are extremely valuable to attackers because no patches exist, making traditional signature-based detection ineffective.
+
 # Labeling, Sovereignty, and Geolocation
 ---
 **Labeling** (visual markings, file metadata tags, or document headers) lets both humans and automated tools such as DLP enforce handling. 
 **Data Sovereignty** means data is subject to the laws of the country where it physically resides.
 **Data Residency/Geolocation** requirements force data to stay in a defined region. A scenario that says "EU customer records must remain on EU servers" is testing sovereignty, not encryption.
 
-## Worked Scenario
+### Worked Scenario
 ---
 A product team exports support cases to a spreadsheet holding names, emails, notes, and partial account IDs. Even though the source ticketing system is protected, the export is a **new copy** of confidential data and must be reclassified, stored in an approved workspace, restricted to the project team, given a retention/expiration date, and securely deleted when analysis ends. Better still; export only needed columns and mask identifiers (**data minimization** applied at the handling layer).
+
+# Hashing and Encryption 
+---
+**DES (Data Encryption Standard)**:
+    uses an effective 56-bit key, which is too short to resist modern exhausting search. AES supersded DES and supports 128-, 192-, and 256-bit keys. 
+    Triple DES was an interim replacement, but current NIST guidance also disallows using three-key TDEA to apply new cryptographic protection.
 
 

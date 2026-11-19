@@ -1,4 +1,4 @@
-# Security+ Study Guide
+ Security+ Study Guide
 
 This file contains practice questions and answers for the CompTIA Security+ exam.
 
